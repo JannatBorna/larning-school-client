@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import Header from './components/Page/Shared/Header/Header';
+import Footer from './components/Page/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           </Route> */}
 
         </Routes>
+        <Footer></Footer>
       </BrowserRouter> 
 
     </div>
