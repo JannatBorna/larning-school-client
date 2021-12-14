@@ -6,15 +6,13 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
+        <div id="header">
             <Navbar collapseOnSelect expand="lg" variant="black">
                 <Container>
-                    <Navbar.Brand className="text-white">
-                           
-                          
-                        <img className='logo_image' src={logo} alt="" /> <span className="website-name">School </span>
-                        
+                    <Navbar.Brand>
+                        <h5 className="website-name"><span className="skill_text mx-3 my-3">LS</span></h5>
                     </Navbar.Brand>
+
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="text-white" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
 

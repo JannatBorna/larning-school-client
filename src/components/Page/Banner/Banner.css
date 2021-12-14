@@ -1,0 +1,36 @@
+#banner {
+    background-color: #e0c475 !important;
+    font-family: cursive;
+}
+
+.tag_p {
+    color: rgb(20, 20, 24) !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.program {
+    color: rgb(248, 24, 36) !important;
+    font-size: 25px;
+}
+
+.tag_small {
+    color: black !important;
+    font-size: 13px;
+}
+
+.banner_text {
+    font-size: 13px;
+    color: rgb(163, 160, 160);
+}
+
+
+
+.home_button {
+    margin-right: 430px;
+}
+
+.button_color {
+
+    background-color: rgb(20, 20, 24) !important;
+}
