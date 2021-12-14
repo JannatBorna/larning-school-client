@@ -4,6 +4,7 @@ import Header from './components/Page/Shared/Header/Header';
 import Footer from './components/Page/Shared/Footer/Footer';
 import Home from './components/Page/Home/Home';
 import Banner from './components/Page/Banner/Banner';
+import Services from './components/Page/Services/Services/Services';
 
 function App() {
   return (
@@ -19,10 +20,10 @@ function App() {
           <Route exact path="/banner" element={<Banner />}>
           </Route>
 
-          {/*<Route exact path="/projects" element={<Projects />}>
+          <Route exact path="/ourServices" element={<Services />}>
           </Route>
 
-           <Route exact path="/aboutMe" element={<AboutMe />}>
+           {/*<Route exact path="/aboutMe" element={<AboutMe />}>
           </Route>
 
           

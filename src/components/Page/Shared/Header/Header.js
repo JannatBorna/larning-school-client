@@ -18,7 +18,7 @@ const Header = () => {
 
                         <Nav defaultActiveKey="/home">
                             <Nav.Link className="nav_bar active" as={HashLink} to="/home#home">Home</Nav.Link>
-                            <Nav.Link className="nav_bar" as={HashLink} to="/Products#services">Products</Nav.Link>
+                            <Nav.Link className="nav_bar" as={HashLink} to="/ourServices#ourServices">Our services</Nav.Link>
                             <Nav.Link className="nav_bar" as={HashLink} to="/about#about">About</Nav.Link>
                            
                             <Nav.Link className="nav_bar" as={HashLink} to="/contact">Contact</Nav.Link>
