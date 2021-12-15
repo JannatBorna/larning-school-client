@@ -5,6 +5,7 @@ import Footer from './components/Page/Shared/Footer/Footer';
 import Home from './components/Page/Home/Home';
 import Banner from './components/Page/Banner/Banner';
 import Services from './components/Page/Services/Services/Services';
+import NotFound from './components/Page/NotFound/NotFound';
 
 function App() {
   return (
@@ -31,13 +32,15 @@ function App() {
           <Route path="/profile" element={<Profile />}>
           </Route>
 
-          <Route exact path="/contact" element={<Contact />}>
-          </Route>
+           <Route exact path="/details/:projectsId" element={<Details />}>
+          </Route>*/}
+
+          <Route exact path="*" element={<NotFound />}>
+          </Route> 
 
 
 
-          <Route exact path="/details/:projectsId" element={<Details />}>
-          </Route> */}
+          
 
         </Routes>
         <Footer></Footer>
