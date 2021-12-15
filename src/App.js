@@ -7,6 +7,7 @@ import Banner from './components/Page/Banner/Banner';
 import Services from './components/Page/Services/Services/Services';
 import NotFound from './components/Page/NotFound/NotFound';
 import Login from './components/Login/Login/Login';
+import Register from './components/Login/Register/Register';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </Route>*/}
 
           <Route path="/login" element={<Login />}>
+          </Route>
+
+          <Route path="/register" element={<Register />}>
           </Route>
 
           <Route exact path="*" element={<NotFound />}>
