@@ -22,8 +22,11 @@
     "react-router-dom": "^6.1.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
     "react-spring": "^9.3.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
+    "swiper": "^7.3.2",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
   },
