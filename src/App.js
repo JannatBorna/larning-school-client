@@ -6,6 +6,7 @@ import Home from './components/Page/Home/Home';
 import Banner from './components/Page/Banner/Banner';
 import Services from './components/Page/Services/Services/Services';
 import NotFound from './components/Page/NotFound/NotFound';
+import Login from './components/Login/Login/Login';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
 
            <Route exact path="/details/:projectsId" element={<Details />}>
           </Route>*/}
+
+          <Route path="/login" element={<Login />}>
+          </Route>
 
           <Route exact path="*" element={<NotFound />}>
           </Route> 
