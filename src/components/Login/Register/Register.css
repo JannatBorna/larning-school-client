@@ -1,0 +1,12 @@
+.register {
+    color: rgb(11, 174, 202) !important;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+
+.register_button {
+    background-color: rgb(60, 158, 161) !important;
+    width: 50%;
+}

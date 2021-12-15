@@ -7,12 +7,9 @@ import './Login.css'
 
 const Login = () => {
     return (
-        <Container>
-            <Grid container spacing={2}>
-                <Grid item sx={{ mt: 8 }} xs={12} md={6} className="input-login">
-                    <Typography variant="body1" gutterBottom>
-                        Login</Typography>
-                   <form > {/* onSubmit={handleLoginSubmit} */}
+        <Container >
+             <form className="login_container mt-5"> {/* onSubmit={handleLoginSubmit} */} 
+                <h2 className="login mt-3 mb-4">Login With</h2>
                         <TextField
                             sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Email"
                             name="email"
@@ -31,13 +28,13 @@ const Login = () => {
                             variant="standard" />
 
 
-                        <Button className="login-button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <Button className="login_button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
 
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
-                            <Button variant="text" className="login_text">New User? please  
-                            <span className="please_register mx-1">Register</span></Button>
+                            <Button variant="text" className="login_text">New User?  
+                            <span className="please_register mx-1">Register Now</span></Button>
                         </NavLink>
 
 
@@ -64,26 +61,16 @@ const Login = () => {
                         {/*--------- Google--------- */}
                         <br />
                         <button 
-                        className="btn_google mx-2"><i className="fab fa-google"></i> Google</button>
+                        className="btn_google mx-2 mb-4"><i className="fab fa-google"></i> Google</button>
 
                         {/* ---------Github--------- */}
-                        <button className="btn_github mx-2"><i className="fab fa-github"></i> Github</button>
+                        <button className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
 
                     </form>
-
-
-
-
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%', backgroundColor: 'cadetblue' }} src={login} alt="" />
-                </Grid>
-
-            </Grid>
-
-
         </Container>
     );
 };
 
 export default Login;
+                    
+            

@@ -1,27 +1,16 @@
-.input-login {
-    height: 480px;
-    z-index: 1;
-    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+.login_container{
+    border: 1px solid gray;
+    width: 40%;
+    height: 80%;
+    margin-left: 360px;
+    text-align: center;
 }
 
-.login-btn {
-    margin-left: 170px;
-    background-color: rgb(64, 170, 117) !important;
-    border-radius: 6px;
-    margin-right: 500px;
-    width: 20%;
-}
-
-.online-btn {
-    background-color: #4b79c4;
-    color: white;
-    width: 150px;
-    border: none;
-    padding: 7px 5px;
-    border-radius: 10px;
-    margin: 5px;
-    cursor: pointer;
+.login {
+    color: rgb(228, 22, 108) !important;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: cursive;
 }
 
 .login_text {
@@ -32,8 +21,9 @@
 }
 
 
-.login-button {
-    background-color: rgb(60, 158, 161) !important;
+.login_button {
+    background-color: rgb(218, 8, 78) !important;
+    width: 50%;
 }
 
 .btn_google {
@@ -55,7 +45,7 @@
     height: 15%;
 }
 
-.please_register{
+.please_register {
     color: red !important;
     font-size: 15px;
     font-weight: 600;
