@@ -1,0 +1,35 @@
+.review {
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid rgb(228, 226, 226);
+    height: 270px;
+    border-radius: 7px;
+}
+
+.review:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.description_text {
+    font-size: 11px;
+    color: rgb(117, 110, 110);
+    font-family: cursive;
+}
+
+.name_text {
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+    font-family: cursive;
+}
+
+.price_text {
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+}
+
+.butt-color {
+    background-color: rgb(165, 219, 221) !important;
+    color: rgb(7, 7, 7) !important;
+}

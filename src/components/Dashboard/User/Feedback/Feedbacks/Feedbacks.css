@@ -1,0 +1,9 @@
+.feedbacks_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.student_feedback {
+    color: rgb(29, 114, 139) !important;
+    font-family: cursive;
+}
