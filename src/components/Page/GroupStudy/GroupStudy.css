@@ -1,0 +1,30 @@
+.group_study {
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid rgb(214, 198, 198);
+    height: 380px;
+    border-radius: 7px;
+}
+
+.study {
+    border: 1px solid rgb(116, 115, 107);
+    height: 280px;
+    border-radius: 7px;
+}
+
+.study:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.join_group {
+    background-color: rgb(231, 25, 104) !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.group_text {
+    color: rgb(231, 25, 104) !important;
+    font-family: cursive;
+}

@@ -7,8 +7,6 @@ const Feedback = ({ feedback }) => {
     const { name, img, description, rating } = feedback;
     return (
         <div className="review">
-
-
             <Container>
                 <Image className="w-25" src={img} roundedCircle />
                 <h4 className="name_text my-2">{name}</h4>
