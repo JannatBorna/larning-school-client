@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, useLocation } from 'react-router-dom';
+import { useLocation, Navigate} from 'react-router-dom';
 import useAuth from './../../../hook/useAuth';
 import { CircularProgress } from '@mui/material';
 

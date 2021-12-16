@@ -1,24 +1,39 @@
-import React from 'react';
-import { Alert, AlertTitle, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Alert, AlertTitle, Button, CircularProgress, Container, TextField, } from '@mui/material';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import login from '../../../image/login/login.png';
-import './Login.css'
 import useAuth from './../../../hook/useAuth';
-
+import './Login.css'
 
 const Login = () => {
-    const { signInWithGoogle, signInWithGithub} = useAuth();
 
-    ///login before private page -- google 
+    const [loginData, setLoginData] = useState({});
+
+
     const location = useLocation();
     const navigate = useNavigate();
-    
 
-    const handleGoogleSignIn = () => {
+    const { user, loginUser, authError, isLoading, signInWithGoogle, signInWithGithub } = useAuth();
+
+    const handleOnBlur = e => {
+        const field = e.target.name;
+        const value = e.target.value;
+        //console.log(field, value)
+        const newLoginData = { ...loginData }
+        newLoginData[field] = value;
+        setLoginData(newLoginData);
+        console.log(newLoginData)
+    }
+
+    const handleLoginSubmit = e => {
+        loginUser(loginData.email, loginData.password, location, navigate);
+        e.preventDefault();
+    }
+
+    const handleGoogleSign = () => {
         signInWithGoogle(location, navigate)
     }
 
-    const handleGithubSignIn = () => {
+    const handleGithubSign = () => {
         signInWithGithub(location, navigate)
     }
 
@@ -26,12 +41,12 @@ const Login = () => {
 
     return (
         <Container >
-             <form className="login_container mt-5"> {/* onSubmit={handleLoginSubmit} */} 
+            <form onSubmit={handleLoginSubmit} className="login_container mt-5"> 
                 <h2 className="login mt-3 mb-4">Login With</h2>
                         <TextField
                             sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Email"
                             name="email"
-                            // onChange={handleOnChange}
+                            onChange={handleOnBlur}
                             variant="standard" />
 
                         <TextField
@@ -41,7 +56,7 @@ const Login = () => {
                             label="Password"
                             type="password"
                             name="password"
-                            // onChange={handleOnChange}
+                            onChange={handleOnBlur}
                             autoComplete="current-password"
                             variant="standard" />
 
@@ -57,34 +72,34 @@ const Login = () => {
 
 
                         {/* loading */}
-                        {/* {
+                        {
                             isLoading && <CircularProgress
                                 color="secondary" />
-                        } */}
+                        }
 
                         {/* register  successfully*/}
-                        {/* {
+                        {
                             user?.email && <Alert severity="success">Login successfully!</Alert>
-                        } */}
+                        }
 
                         {/* error message */}
 
-                        {/* {
+                        {
                             authError && <Alert severity="error">
                                 <AlertTitle>Error</AlertTitle>
                                 {authError}
                             </Alert>
-                        } */}
+                        }
 
                         {/*--------- Google--------- */}
                         <br />
                         <button 
-                        onClick={handleGoogleSignIn}
+                        onClick={handleGoogleSign}
                         className="btn_google mx-2 mb-4"><i className="fab fa-google"></i> Google</button>
 
                         {/* ---------Github--------- */}
                         <button 
-                        onClick={handleGithubSignIn}
+                        onClick={handleGithubSign}
                         className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
 
                     </form>
