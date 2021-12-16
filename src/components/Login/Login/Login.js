@@ -1,11 +1,29 @@
 import React from 'react';
 import { Alert, AlertTitle, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../../image/login/login.png';
 import './Login.css'
+import useAuth from './../../../hook/useAuth';
 
 
 const Login = () => {
+    const { signInWithGoogle, signInWithGithub} = useAuth();
+
+    ///login before private page -- google 
+    const location = useLocation();
+    const navigate = useNavigate();
+    
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle(location, navigate)
+    }
+
+    const handleGithubSignIn = () => {
+        signInWithGithub(location, navigate)
+    }
+
+
+
     return (
         <Container >
              <form className="login_container mt-5"> {/* onSubmit={handleLoginSubmit} */} 
@@ -61,10 +79,13 @@ const Login = () => {
                         {/*--------- Google--------- */}
                         <br />
                         <button 
+                        onClick={handleGoogleSignIn}
                         className="btn_google mx-2 mb-4"><i className="fab fa-google"></i> Google</button>
 
                         {/* ---------Github--------- */}
-                        <button className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
+                        <button 
+                        onClick={handleGithubSignIn}
+                        className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
 
                     </form>
         </Container>
