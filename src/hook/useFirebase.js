@@ -22,6 +22,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
+    const [admin, setAdmin] = useState(false);
 
 
     const auth = getAuth();
@@ -33,8 +34,8 @@ const useFirebase = () => {
         setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-                // const user = result.user;
-                // saveUser(user.email, user.displayName, 'PUT');
+                const user = result.user;
+                saveUser(user.email, user.displayName, 'PUT');
                 setAuthError('');
                 const destination = location?.state?.from || '/ourServices';
                 navigate(destination);
@@ -51,8 +52,8 @@ const useFirebase = () => {
         setIsLoading(true);
         signInWithPopup(auth, githubProvider)
             .then((result) => {
-                // const user = result.user;
-                // saveUser(user.email, user.displayName, 'PUT');
+                const user = result.user;
+                saveUser(user.email, user.displayName, 'PUT');
                 setAuthError('');
                 const destination = location?.state?.from || '/ourServices';
                 navigate(destination);
@@ -79,7 +80,7 @@ const useFirebase = () => {
                 setUser(newUser);
 
                 // save user to the database
-                // saveUser(email, name, 'POST');
+                saveUser(email, name, 'POST');
 
 
 
@@ -148,7 +149,26 @@ const useFirebase = () => {
 
     }           
            
-          
+    // user information
+    const saveUser = (email, displayName, method) => {
+        const user = { email, displayName };
+        fetch('https://desolate-sea-37549.herokuapp.com/users', {
+            method: method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then()
+    }
+
+
+    // admin verified
+    useEffect(() => {
+        fetch(`https://desolate-sea-37549.herokuapp.com/users/${user.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin))
+    }, [user.email])     
      
     return {
         user,
@@ -158,7 +178,8 @@ const useFirebase = () => {
         signInWithGithub,
         logOut,
         registerUser,
-        loginUser
+        loginUser,
+        admin
 
 
     }

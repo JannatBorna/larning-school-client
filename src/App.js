@@ -76,7 +76,7 @@ function App() {
               
 
 
-              <Route path={`dashboard/manageServices`}
+              <Route path={`/dashboard/manageServices`}
                 element={
                  <ManageServices></ManageServices>
                 } />
@@ -109,12 +109,17 @@ function App() {
   </Route>  
               
 
-
+{/* ----------------------------------*/}
 
               
                 
-         {/* ----------------------------------*/}
          
+            <Route path="/makeAdmin"
+              element={
+               <MakeAdmin></MakeAdmin>
+              } />
+
+
 
             <Route path="/singleService/:servicesId" element={<SingleService />}>
             </Route>
