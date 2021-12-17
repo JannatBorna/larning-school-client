@@ -12,6 +12,7 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Apply from './components/Page/Apply/Apply';
 import SingleService from './components/Page/SingleService/SingleService';
+import Dashboard from './components/Dashboard/Dashboard/Dasboard/Dashboard';
 
 function App() {
   return (
@@ -36,8 +37,8 @@ function App() {
             }>
             </Route>
 
-           {/*<Route path="/profile" element={<Profile />}>
-          </Route>*/}
+            <Route path="/dashboard" element={<Dashboard />}>
+          </Route>
 
             <Route path="/singleService/:servicesId" element={<SingleService />}>
             </Route>
