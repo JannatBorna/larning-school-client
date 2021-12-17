@@ -14,11 +14,24 @@
 @media only screen and (max-width:688px) {
     .admin-image {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: -130px;
+    }
+
+    .dashboard_user {
+        margin-top: 100px;
+
     }
 }
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
     .admin-image {
         grid-template-columns: repeat(1, 1fr);
+        margin-right: -290px;
+
+    }
+
+    .dashboard_user {
+        margin-top: 200px;
+
     }
 }

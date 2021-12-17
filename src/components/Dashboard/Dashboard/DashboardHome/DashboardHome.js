@@ -14,14 +14,14 @@ const DashboardHome = () => {
 
             {
                 admin && <Box>
-                    <h2 className='mt-5'>Welcome to Admin Dashboard ~~ <span className="display-name">{user.displayName}</span></h2>
+                    <h2 className='mt-5 dashboard_user'>Welcome to Admin Dashboard ~~ <span className="display-name">{user.displayName}</span></h2>
                     <img className="w-50" src={admin1} alt="" />
                 </Box>
             }
 
             {
                 !admin && <Box>
-                    <h2>Welcome to user Dashboard ~~ <span className="display-name">{user.displayName}</span></h2>
+                    <h2 className='dashboard_user'>Welcome to user Dashboard ~~ <span className="display-name">{user.displayName}</span></h2>
                     <img className="w-50" src={user1} alt="" />
                 </Box>
             }
