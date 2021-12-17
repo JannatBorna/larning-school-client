@@ -11,6 +11,7 @@ import Register from './components/Login/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Apply from './components/Page/Apply/Apply';
+import SingleService from './components/Page/SingleService/SingleService';
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
            {/*<Route path="/profile" element={<Profile />}>
           </Route>*/}
 
-            <Route path="/apply/:servicesId" element={<Apply />}>
+            <Route path="/singleService/:servicesId" element={<SingleService />}>
             </Route>
 
             <Route path="/login" element={<Login />}>

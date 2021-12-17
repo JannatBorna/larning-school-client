@@ -1,0 +1,23 @@
+.booking {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.booking-card {
+    border: 1px solid rgb(228, 226, 226);
+    height: 360px;
+    border-radius: 7px;
+}
+
+/* responsive */
+@media only screen and (max-width:688px) {
+    .booking {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .booking {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

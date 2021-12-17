@@ -15,7 +15,7 @@ const HomeService = ({ homeService}) => {
         }
     }))
 
-    const { name, img, price, describe } = homeService;
+    const { _id, name, img, price, describe } = homeService;
 
     return (
         <div className="col-md-4 mb-5" direction="horizontal">
@@ -40,7 +40,7 @@ const HomeService = ({ homeService}) => {
                                 </h5>
                             </div>
                             <div className="col-md-6 col-sm-12 col-lg-6 ">
-                                <Link to="/dashboard">
+                                <Link to={`/singleService/${_id}`}>
                                     <button className="btn btn-info mt-3">Apply Now</button>
                                 </Link>
 
