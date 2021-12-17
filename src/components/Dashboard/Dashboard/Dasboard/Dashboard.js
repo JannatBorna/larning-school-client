@@ -142,27 +142,27 @@ export default function MiniDrawer() {
 
                     <br />
 
-                    <Link to={`dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
+                    <Link to={`/dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
 
                     <br />
 
-                    <Link to={`dashboard/myOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
+                    <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
 
                     <br />
 
-                    <Link to={`dashboard/addReview`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Reviews</Button></Link>
+                    <Link to={`/dashboard/addFeedback`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Reviews</Button></Link>
 
                     <br />
 
-                    <Link to={`dashboard/makeAdmin`} className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
+                    <Link to={`/dashboard/makeAdmin`} className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
 
                     <br />
 
-                    <Link to={`dashboard/addProduct`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Product</Button></Link>
+                    <Link to={`/dashboard/addServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Product</Button></Link>
 
                     <br />
 
-                    <Link to={`dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
+                    <Link to={`/dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
 
                     <br />
                     

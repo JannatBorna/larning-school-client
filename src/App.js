@@ -10,9 +10,14 @@ import Login from './components/Login/Login/Login';
 import Register from './components/Login/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
-import Apply from './components/Page/Apply/Apply';
 import SingleService from './components/Page/SingleService/SingleService';
 import Dashboard from './components/Dashboard/Dashboard/Dasboard/Dashboard';
+import MakeAdmin from './components/Dashboard/Admin/MakeAdmin/MakeAdmin';
+import AddServices from './components/Dashboard/Admin/AddServices/AddServices';
+import ManageAllOrder from './components/Dashboard/Admin/ManageAllOrder/ManageAllOrder';
+import Pay from './components/Dashboard/User/Pay/Pay';
+import AddFeedback from './components/Dashboard/User/Feedback/AddFeedback/AddFeedback';
+import MyOrders from './components/Dashboard/User/MyOrder/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -38,7 +43,70 @@ function App() {
             </Route>
 
             <Route path="/dashboard" element={<Dashboard />}>
-          </Route>
+
+{/* // nesting route  */} {/* admin */}
+              <Route path={`/dashboard/makeAdmin`}
+                element={
+                  <MakeAdmin></MakeAdmin>  
+                } />
+              
+                 
+                
+
+              <Route path={`/dashboard/addServices`}
+                element={
+                  <AddServices></AddServices>
+                } />
+                
+                
+                
+
+              <Route path={`/dashboard/manageAllOrder`}
+                element={
+                   <ManageAllOrder></ManageAllOrder>
+                 } />
+              
+
+
+              <Route path={`dashboard/manageProduct`}
+                element={
+                  <ManageAllOrder></ManageAllOrder>
+                } />
+             
+
+          
+                
+               {/* user */}
+
+              <Route path={`/dashboard/pay`}
+                element={
+              <Pay></Pay>
+                 } />
+              
+
+                 
+              <Route path={`/dashboard/addFeedback`}
+                element={
+                  <AddFeedback></AddFeedback>
+                } />
+                
+
+
+              <Route exact path={`/dashboard/myOrders`}
+                element={
+                 <MyOrders></MyOrders>
+                } />
+              
+                 
+  </Route>  
+              
+
+
+
+              
+                
+         {/* ----------------------------------*/}
+         
 
             <Route path="/singleService/:servicesId" element={<SingleService />}>
             </Route>
@@ -62,3 +130,4 @@ function App() {
 }
 
 export default App;
+  

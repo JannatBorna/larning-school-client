@@ -6,7 +6,7 @@ const Feedbacks = () => {
      const [feedbacks, setFeedback] = useState([])
 
      useEffect(() => {
-          fetch('/Review.json')
+         fetch('https://warm-oasis-87609.herokuapp.com/feedbacks')
           .then(res => res.json())
           .then(data => setFeedback(data))
      }, [])
