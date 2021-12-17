@@ -20,7 +20,7 @@
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
     .services_container {
-       grid-template-columns: repeat(3, 1fr);
+       grid-template-columns: repeat(2, 1fr);
         
        
     }

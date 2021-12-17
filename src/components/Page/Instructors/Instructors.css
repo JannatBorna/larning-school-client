@@ -133,4 +133,8 @@ section .section-title {
         font-size: 35px;
         font-weight: 600;
     }
+
+    .instructors {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

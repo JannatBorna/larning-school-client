@@ -2,37 +2,37 @@
     {
         "img": "https://i.ibb.co/vY8K4kM/web.png",
         "name": "Web Development",
-        "describe": "Lorem ipsum dolor sit, amet consectetur adipisicing elit eos fugit ratione exercitationem veniam.",
+        "describe": "Full-stack developers who can develop for the cloud and work with Redis or React followed by Node.",
         "price": "20"
     },
     {
         "img": "https://i.ibb.co/5cjznpr/ai.png",
         "name": "Artificial Intelligence",
-        "describe": "Lorem ipsum dolor sit, amet consectetur adipisicing elit eos fugit ratione exercitationem veniam.",
+        "describe": "Learning intermediate computer familiar TensorFlow framework understand Artificial Neural Networks.",
         "price": "19"
     },
     {
         "img": "https://i.ibb.co/CPZ0y0q/py.png",
         "name": "Python",
-        "describe": "Lorem ipsum dolor sit, amet consectetur adipisicing elit eos fugit ratione exercitationem veniam.",
+        "describe": "code Python as early as elementary school. Here's how they can get started: Type Everything but typing by hand.",
         "price": "12"
     },
     {
         "img": "https://i.ibb.co/Gx1xvfB/phy.png",
         "name": "Physics",
-        "describe": "Lorem ipsum dolor sit, amet consectetur adipisicing elit eos fugit ratione exercitationem veniam.",
+        "describe": "physics in an engaging and effective online learning video pursue verified certificates physics courses.",
         "price": "11"
     },
     {
         "img": "https://i.ibb.co/vxMTJ8F/eng.png",
         "name": "English",
-        "describe": "Lorem ipsum dolor sit, amet consectetur adipisicing elit eos fugit ratione exercitationem veniam.",
+        "describe": "Listening, Speaking, Reading and Writing are the main (macro) skills you need to communicate in any language.",
         "price": "15"
     },
     {
         "img": "https://i.ibb.co/yXmk5Kt/data.png",
         "name": "Database",
-        "describe": "Lorem ipsum dolor sit, amet consectetur adipisicing elit eos fugit ratione exercitationem veniam.",
+        "describe": "A student database management system allows schools access these records as needed work administration team.",
         "price": "18"
     },
     {

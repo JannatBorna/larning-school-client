@@ -20,7 +20,7 @@ const Instructors = () => {
                        
                         <div className="row">
 
-                            <div className="col-xs-12 col-sm-6 col-md-4">
+                            <div className="col-lg-4 col-xs-12 col-sm-12 col-md-6">
                                 <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div className="main_flip">
                                         <div className="front_side">
@@ -58,7 +58,7 @@ const Instructors = () => {
 
 
 
-                            <div className="col-xs-12 col-sm-6 col-md-4">
+                            <div className="col-lg-4 col-xs-12 col-sm-12 col-md-6">
                                 <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div className="main_flip">
                                         <div className="front_side">
@@ -93,7 +93,7 @@ const Instructors = () => {
                                 </div>
                             </div>
 
-                            <div className="col-xs-12 col-sm-6 col-md-4">
+                            <div className="col-lg-4 col-xs-12 col-sm-12 col-md-6">
                                 <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div className="main_flip">
                                         <div className="front_side">
@@ -129,7 +129,7 @@ const Instructors = () => {
                             </div>   
 
 
-                            <div className="col-xs-12 col-sm-6 col-md-4">
+                            <div className="col-lg-4 col-xs-12 col-sm-12 col-md-6">
                                 <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div className="main_flip">
                                         <div className="front_side">
@@ -167,7 +167,7 @@ const Instructors = () => {
                             </div>
 
 
-                            <div className="col-xs-12 col-sm-6 col-md-4">
+                            <div className="col-lg-4 col-xs-12 col-sm-12 col-md-6">
                                 <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div className="main_flip">
                                         <div className="front_side">
@@ -204,7 +204,7 @@ const Instructors = () => {
                             </div>
 
 
-                            <div className="col-xs-12 col-sm-6 col-md-4">
+                            <div className="col-lg-4 col-xs-12 col-sm-12 col-md-6">
                                 <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
                                     <div className="main_flip">
                                         <div className="front_side">

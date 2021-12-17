@@ -29,3 +29,9 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .feedbacks_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
