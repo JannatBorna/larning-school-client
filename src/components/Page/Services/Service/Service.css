@@ -32,3 +32,9 @@
     font-size: 13px;
     color: gray;
 }
+
+.app_button{
+    background-color: rgb(202, 15, 77) !important;
+    color: white !important;
+    border-radius: 4px;
+}

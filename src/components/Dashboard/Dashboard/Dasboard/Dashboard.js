@@ -1,187 +1,174 @@
 import * as React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import MuiDrawer from '@mui/material/Drawer';
-import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
-import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import {Link} from "react-router-dom";
+import { Button } from '@mui/material';
+import useAuth from '../../../../hook/useAuth';
 
-import './Dashboard';
+import './Dashboard.css'
 
-const drawerWidth = 240;
 
-const openedMixin = (theme) => ({
-    width: drawerWidth,
-    transition: theme.transitions.create('width', {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.enteringScreen,
-    }),
-    overflowX: 'hidden',
-});
 
-const closedMixin = (theme) => ({
-    transition: theme.transitions.create('width', {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
-    }),
-    overflowX: 'hidden',
-    width: `calc(${theme.spacing(7)} + 1px)`,
-    [theme.breakpoints.up('sm')]: {
-        width: `calc(${theme.spacing(9)} + 1px)`,
-    },
-});
 
-const DrawerHeader = styled('div')(({ theme }) => ({
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-}));
+const drawerWidth = 185;
 
-const AppBar = styled(MuiAppBar, {
-    shouldForwardProp: (prop) => prop !== 'open',
-})(({ theme, open }) => ({
-    zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(['width', 'margin'], {
-        easing: theme.transitions.easing.sharp,
-        duration: theme.transitions.duration.leavingScreen,
-    }),
-    ...(open && {
-        marginLeft: drawerWidth,
-        width: `calc(100% - ${drawerWidth}px)`,
-        transition: theme.transitions.create(['width', 'margin'], {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
-    }),
-}));
-
-const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
-    ({ theme, open }) => ({
-        width: drawerWidth,
-        flexShrink: 0,
-        whiteSpace: 'nowrap',
-        boxSizing: 'border-box',
-        ...(open && {
-            ...openedMixin(theme),
-            '& .MuiDrawer-paper': openedMixin(theme),
-        }),
-        ...(!open && {
-            ...closedMixin(theme),
-            '& .MuiDrawer-paper': closedMixin(theme),
-        }),
-    }),
-
+function Dashboard(props) {
+    const { window } = props;
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { admin, logout } = useAuth();
+    const handleDrawerToggle = () => {
+        setMobileOpen(!mobileOpen);
+    };
     
-);
+
+    const drawer = (
+        <div>
+            <Toolbar />
+            <Divider />
+            <Link to="/" className="decoration"><Button className="dash-button my-3" color="inherit">Home</Button></Link>
+
+            <br />
+
+            <Link to="/ourServices" className="decoration"><Button className="dash-button my-3" color="inherit">Services</Button></Link>
+
+            <br />
+
+            <Link to={`/dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
+
+            <br />
+
+            <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
+
+            <br />
+
+            <Link to={`/dashboard/addFeedback`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Feedback</Button></Link>
+
+            <br />
+
+            <Link to="/dashboard/makeAdmin" className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
+
+            <br />
+
+            <Link to={`/dashboard/addServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Services</Button></Link>
+
+            <br />
+
+            <Link to={`/dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
+
+            <br />
+
+            <Link to={`dashboard/manageServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Services</Button></Link>
 
 
 
-export default function MiniDrawer() {
-    const theme = useTheme();
-    const [open, setOpen] = React.useState(false);
-
-    const handleDrawerOpen = () => {
-        setOpen(true);
-    };
-
-    const handleDrawerClose = () => {
-        setOpen(false);
-    };
-
-
+        </div>
+    );
+    const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex' }} >
             <CssBaseline />
-            <AppBar position="fixed" open={open}>
+            <AppBar
+                position="fixed"
+                sx={{
+                    width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    ml: { sm: `${drawerWidth}px` },
+                    backgroundColor: 'cadetblue',
+                    height: '15%',
+                    color: 'Black'
+
+                }}
+            >
                 <Toolbar>
                     <IconButton
                         color="inherit"
-                        backgroundColor='cadetblue'
                         aria-label="open drawer"
-                        onClick={handleDrawerOpen}
                         edge="start"
-                        sx={{
-                            marginRight: '36px',
-                            ...(open && { display: 'none' }),
-                        }}
+                        onClick={handleDrawerToggle}
+                        sx={{ mr: 2, display: { sm: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                       Dashboard
+                        Dashboard
+                    </Typography>
+
+                    <Typography>
+                        {
+                            admin && <Box>
+                                <Button onClick={logout}
+                                    className="btn-logout mx-5" variant="secondary">Logout
+                                </Button>
+                            </Box>
+                        }
+
+
                     </Typography>
                 </Toolbar>
             </AppBar>
-            <Drawer variant="permanent" open={open}>
-                <DrawerHeader>
-                    <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-                      
-                    </IconButton>
-                </DrawerHeader>
-                <Divider />
-                <List>
-                    <Link to="/" className="decoration"><Button className="dash-button my-3" color="inherit">Home</Button></Link>
-               
-                    <br />
+            <Box
+                component="nav"
+                sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+                aria-label="mailbox folders"
+            >
 
-                    <Link to="/ourServices" className="decoration"><Button className="dash-button my-3" color="inherit">Services</Button></Link>
+                <Drawer
+                    container={container}
+                    variant="temporary"
+                    open={mobileOpen}
+                    onClose={handleDrawerToggle}
+                    ModalProps={{
+                        keepMounted: true, // Better open performance on mobile.
+                    }}
+                    sx={{
+                        display: { xs: 'block', sm: 'none' },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    }}
+                >
+                    {drawer}
+                </Drawer>
+                <Drawer
+                    variant="permanent"
+                    sx={{
+                        display: { xs: 'none', sm: 'block' },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    }}
+                    open
+                >
+                    {drawer}
+                </Drawer>
+            </Box>
+            <Box
+                component="main"
+                sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+            >
+                <Toolbar />
 
-                    <br />
-
-                    <Link to={`/dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
-
-                    <br />
-
-                    <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
-
-                    <br />
-
-                    <Link to={`/dashboard/addFeedback`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Reviews</Button></Link>
-
-                    <br />
-
-                    <Link to={`/dashboard/makeAdmin`} className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
-
-                    <br />
-
-                    <Link to={`/dashboard/addServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Product</Button></Link>
-
-                    <br />
-
-                    <Link to={`/dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
-
-                    <br />
-                    
-                    <Link to={`dashboard/manageProduct`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Product</Button></Link>
-
-               
-                   
-                </List>
-                <Divider />
-              
-            </Drawer>
-            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                <DrawerHeader />
-                <Typography paragraph>
-                    
-                </Typography>
-               
             </Box>
         </Box>
     );
 }
+
+Dashboard.propTypes = {
+    /**
+     * Injected by the documentation to work in an iframe.
+     * You won't need it on your project.
+     */
+    window: PropTypes.func,
+};
+
+export default Dashboard;
+
+
+
+
+
 

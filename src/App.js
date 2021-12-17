@@ -18,6 +18,7 @@ import ManageAllOrder from './components/Dashboard/Admin/ManageAllOrder/ManageAl
 import Pay from './components/Dashboard/User/Pay/Pay';
 import AddFeedback from './components/Dashboard/User/Feedback/AddFeedback/AddFeedback';
 import MyOrders from './components/Dashboard/User/MyOrder/MyOrders/MyOrders';
+import ManageServices from './components/Dashboard/Admin/ManageServices/ManageServices';
 
 function App() {
   return (
@@ -42,10 +43,17 @@ function App() {
             }>
             </Route>
 
-            <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="/dashboard" element={
+            <PrivateRoute>
+                <Dashboard />
+            </PrivateRoute>
+          
+          }>
+            
 
 {/* // nesting route  */} {/* admin */}
-              <Route path={`/dashboard/makeAdmin`}
+
+              <Route  path={`/dashboard/makeAdmin`}
                 element={
                   <MakeAdmin></MakeAdmin>  
                 } />
@@ -68,9 +76,9 @@ function App() {
               
 
 
-              <Route path={`dashboard/manageProduct`}
+              <Route path={`dashboard/manageServices`}
                 element={
-                  <ManageAllOrder></ManageAllOrder>
+                 <ManageServices></ManageServices>
                 } />
              
 
@@ -92,7 +100,7 @@ function App() {
                 
 
 
-              <Route exact path={`/dashboard/myOrders`}
+              <Route path={`/dashboard/myOrders`}
                 element={
                  <MyOrders></MyOrders>
                 } />

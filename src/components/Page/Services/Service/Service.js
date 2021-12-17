@@ -44,7 +44,7 @@ const Service = ({ service }) => {
                             </div>
                             <div className="col-md-6 col-sm-12 col-lg-6 ">
                                 <Link to={`/singleService/${_id}`}>
-                                    <button className="btn btn-info mt-3">Apply Now</button>
+                                    <button className="app_button mt-3">Apply Now</button>
                                 </Link>        
                                         
                             </div>
