@@ -43,6 +43,8 @@ function App() {
             }>
             </Route>
 
+
+
             <Route path="/dashboard" element={
             <PrivateRoute>
                 <Dashboard />
@@ -81,18 +83,8 @@ function App() {
                  <ManageServices></ManageServices>
                 } />
              
-
-          
-                
-               {/* user */}
-
-              <Route path={`/dashboard/pay`}
-                element={
-              <Pay></Pay>
-                 } />
-              
-
-                 
+ {/* user */}
+                  
               <Route path={`/dashboard/addFeedback`}
                 element={
                   <AddFeedback></AddFeedback>
@@ -104,22 +96,12 @@ function App() {
                 element={
                  <MyOrders></MyOrders>
                 } />
-              
+           </Route>            
                  
-  </Route>  
+    
               
 
 {/* ----------------------------------*/}
-
-              
-                
-         
-            <Route path="/makeAdmin"
-              element={
-               <MakeAdmin></MakeAdmin>
-              } />
-
-
 
             <Route path="/singleService/:servicesId" element={<SingleService />}>
             </Route>
@@ -144,3 +126,6 @@ function App() {
 
 export default App;
   
+          
+                
+              
