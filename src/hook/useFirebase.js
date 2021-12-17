@@ -152,7 +152,7 @@ const useFirebase = () => {
     // user information
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://desolate-sea-37549.herokuapp.com/users', {
+        fetch('https://warm-oasis-87609.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -165,7 +165,7 @@ const useFirebase = () => {
 
     // admin verified
     useEffect(() => {
-        fetch(`https://desolate-sea-37549.herokuapp.com/users/${user.email}`)
+        fetch(`https://warm-oasis-87609.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])     
