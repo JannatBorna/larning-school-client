@@ -7,3 +7,25 @@
     color: rgb(29, 114, 139) !important;
     font-family: cursive;
 }
+
+
+@media only screen and (max-width:688px) {
+    .feedbacks_container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10px;
+    }
+
+    .student_feedback {
+        color: rgb(214, 16, 125) !important;
+        font-family: cursive;
+        margin-top: 80px;
+        font-size: 35px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .feedbacks_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

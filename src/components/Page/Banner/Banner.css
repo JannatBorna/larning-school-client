@@ -34,3 +34,26 @@
 
     background-color: rgb(20, 20, 24) !important;
 }
+
+
+@media only screen and (max-width:688px) {
+    #banner {
+        background-color: #e0c475 !important;
+        font-family: cursive;
+    }
+
+    .banner_text {
+        font-size: 10px;
+        color: rgb(163, 160, 160);
+        margin-left: -100px;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    #banner {
+        background-color: #e0c475 !important;
+        font-family: cursive;
+    }
+
+
+}

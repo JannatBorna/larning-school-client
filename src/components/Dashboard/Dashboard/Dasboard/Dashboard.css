@@ -7,3 +7,8 @@
 .decoration {
     text-decoration: none;
 }
+
+.btn-logout{
+    background-color: cadetblue !important;
+    color: black !important;
+}

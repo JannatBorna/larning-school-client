@@ -19,6 +19,7 @@ import Pay from './components/Dashboard/User/Pay/Pay';
 import AddFeedback from './components/Dashboard/User/Feedback/AddFeedback/AddFeedback';
 import MyOrders from './components/Dashboard/User/MyOrder/MyOrders/MyOrders';
 import ManageServices from './components/Dashboard/Admin/ManageServices/ManageServices';
+import DashboardHome from './components/Dashboard/Dashboard/DashboardHome/DashboardHome';
 
 function App() {
   return (
@@ -42,48 +43,73 @@ function App() {
             </PrivateRoute>
             }>
             </Route>
-
-
-
-            <Route path="/dashboard" element={
-            <PrivateRoute>
-                <Dashboard />
-            </PrivateRoute>
-          
-          }>
             
 
-{/* // nesting route  */} {/* admin */}
+            <Route path="/dashboard"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }>
+              {/* // nesting route */}
+
+              <Route exact path="/dashboard" element={<DashboardHome></DashboardHome>}>
+
+              </Route>
+            
+              <Route path={`/dashboard/makeAdmin`}
+                element={
+                  
+                    <MakeAdmin></MakeAdmin>
+                
+                }>
+              </Route>
+
+              {/* <Route path={`/dashboard/addDoctor`}
+                element={
+                  <AdminRoute>
+                    <AddDoctor></AddDoctor>
+                  </AdminRoute>
+                }>
+              </Route> */}
+
+
+
+            </Route>
+
+           
+
+          {/*   <Route path="/dashboard"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }>
+              // nesting route
+
+             
 
               <Route  path={`/dashboard/makeAdmin`}
                 element={
                   <MakeAdmin></MakeAdmin>  
                 } />
-              
-                 
-                
-
+    
               <Route path={`/dashboard/addServices`}
                 element={
                   <AddServices></AddServices>
                 } />
                 
-                
-                
-
               <Route path={`/dashboard/manageAllOrder`}
                 element={
                    <ManageAllOrder></ManageAllOrder>
                  } />
               
-
-
               <Route path={`/dashboard/manageServices`}
                 element={
                  <ManageServices></ManageServices>
                 } />
              
- {/* user */}
+ {/*  // user 
                   
               <Route path={`/dashboard/addFeedback`}
                 element={
@@ -96,9 +122,9 @@ function App() {
                 element={
                  <MyOrders></MyOrders>
                 } />
-           </Route>            
+           </Route>   */}         
                  
-    
+     
               
 
 {/* ----------------------------------*/}

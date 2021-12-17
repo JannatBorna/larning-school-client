@@ -28,3 +28,22 @@
     color: rgb(231, 25, 104) !important;
     font-family: cursive;
 }
+
+
+@media only screen and (max-width:688px) {
+    .group_study {
+        margin: 50px;
+        padding: 10px;
+        border: 1px solid rgb(214, 198, 198);
+        height: 980px;
+        border-radius: 7px;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .services_container {
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+}

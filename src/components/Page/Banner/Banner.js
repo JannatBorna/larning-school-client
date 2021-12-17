@@ -9,7 +9,7 @@ const Banner = () => {
         <div id="banner">
             <Container>
                 <Row className="home_page">
-                    <Col md={7} className="banner_text d-flex align-items-center">
+                    <Col md={7} sm={12} className="banner_text d-flex align-items-center">
                         <div>
                             <p className="tag_p mx-5 text-sm-start">Hard work <br /> is a great tool to <br /> make dreams come true</p>
                            
@@ -50,7 +50,7 @@ const Banner = () => {
 
                             </p>
 
-                            <p className="tag_small mx-5 text-sm-start">I am an enthusiastic JavaScript with knowing some frameworks for the frontend and the backend.I always focus on learning new technology. </p>
+                            <p className="tag_small mx-5 text-sm-start">Multiple subjects help children learn about all the possibilities. It also enables them to make correct decisions regarding their careers as they have a better understanding. </p>
 
 
                             <div className="home_button">
@@ -62,7 +62,7 @@ const Banner = () => {
                            
                     </Col>
 
-                    <Col md={5} className="image">
+                    <Col md={5} sm={12} className="image">
                         <Image className="w-75 mt-5" src={banner} roundedCircle />
                     </Col>
 

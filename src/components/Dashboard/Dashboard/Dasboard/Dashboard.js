@@ -12,8 +12,9 @@ import Typography from '@mui/material/Typography';
 import {Link} from "react-router-dom";
 import { Button } from '@mui/material';
 import useAuth from '../../../../hook/useAuth';
-
+import DashboardHome from './../DashboardHome/DashboardHome';
 import './Dashboard.css'
+
 
 
 
@@ -23,7 +24,7 @@ const drawerWidth = 185;
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { admin, logout } = useAuth();
+    const { admin, logOut } = useAuth();
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -41,31 +42,44 @@ function Dashboard(props) {
 
             <br />
 
-            <Link to={`/dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
+            {
+                !admin && <Box>
+                    <Link to={`/dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
 
-            <br />
+                    <br />
 
-            <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
+                    <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
 
-            <br />
+                    <br />
 
-            <Link to={`/dashboard/addFeedback`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Feedback</Button></Link>
+                    <Link to={`/dashboard/addFeedback`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Feedback</Button></Link>
 
-            <br />
+                    <br />
 
-            <Link to="/dashboard/makeAdmin" className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
+                    <Button onClick={logOut}
+                        className="btn-logout mx-2" variant="secondary">Logout
+                    </Button>
+                </Box>
+            }
 
-            <br />
+            
+            {
+                admin && <Box>
+                    <Link to="/dashboard/makeAdmin" className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
 
-            <Link to={`/dashboard/addServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Services</Button></Link>
+                    <br />
 
-            <br />
+                    <Link to={`/dashboard/addServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Services</Button></Link>
 
-            <Link to={`/dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
+                    <br />
 
-            <br />
+                    <Link to={`/dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
 
-            <Link to={`dashboard/manageServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Services</Button></Link>
+                    <br />
+
+                    <Link to={`dashboard/manageServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Services</Button></Link>
+                </Box>
+            }
 
 
 
@@ -104,7 +118,7 @@ function Dashboard(props) {
                     <Typography>
                         {
                             admin && <Box>
-                                <Button onClick={logout}
+                                <Button onClick={logOut}
                                     className="btn-logout mx-5" variant="secondary">Logout
                                 </Button>
                             </Box>
@@ -153,6 +167,10 @@ function Dashboard(props) {
                 <Toolbar />
 
             </Box>
+
+            <Typography>
+                <DashboardHome></DashboardHome>
+            </Typography>
         </Box>
     );
 }

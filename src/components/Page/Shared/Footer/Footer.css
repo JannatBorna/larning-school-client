@@ -73,6 +73,12 @@
     .footer-responsive {
         width: 100%;
     }
+
+    .footer_button {
+        font-size: 10px;
+        margin-left: -20px;
+        background-color: rgb(10, 36, 65) !important;
+    }
 }
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
