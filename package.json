@@ -27,6 +27,7 @@
     "react-spring": "^9.3.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
+    "sweetalert": "^2.1.2",
     "swiper": "^7.3.2",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"

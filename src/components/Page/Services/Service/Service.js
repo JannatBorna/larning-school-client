@@ -14,7 +14,7 @@ const Service = ({ service }) => {
         config: { mass: 5, tension: 350, friction: 40 
         } }))
 
-    const { name, img, price, describe } = service;
+    const { _id, name, img, price, describe } = service;
 
    
 
@@ -43,7 +43,7 @@ const Service = ({ service }) => {
                                 </h5>
                             </div>
                             <div className="col-md-6 col-sm-12 col-lg-6 ">
-                                <Link to="/dashboard">
+                                <Link to={`/apply/${_id}`}>
                                     <button className="btn btn-info mt-3">Apply Now</button>
                                 </Link>        
                                         

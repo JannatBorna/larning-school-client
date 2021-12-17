@@ -10,6 +10,7 @@ import Login from './components/Login/Login/Login';
 import Register from './components/Login/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import Apply from './components/Page/Apply/Apply';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <AuthProvider>
         <Router>
           <Header></Header>
-          <Routes>
-            <Route exact path="/" element={<Home />}>
-            </Route>
+            <Routes>
+              <Route exact path="/" element={<Home />}>
+              </Route>
+
             <Route exact path="/home" element={<Home />}>
             </Route>
 
@@ -33,15 +35,11 @@ function App() {
             }>
             </Route>
 
-          
-
-          
-
            {/*<Route path="/profile" element={<Profile />}>
-          </Route>
-
-           <Route exact path="/details/:projectsId" element={<Details />}>
           </Route>*/}
+
+            <Route path="/apply/:servicesId" element={<Apply />}>
+            </Route>
 
             <Route path="/login" element={<Login />}>
             </Route>
@@ -52,11 +50,7 @@ function App() {
             <Route exact path="*" element={<NotFound />}>
             </Route>
 
-
-
-
-
-          </Routes>
+            </Routes>
           <Footer></Footer>
         </Router> 
       </AuthProvider>

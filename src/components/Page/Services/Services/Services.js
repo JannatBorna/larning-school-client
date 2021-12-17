@@ -11,7 +11,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-           fetch('/service.json')
+        fetch('https://warm-oasis-87609.herokuapp.com/services')
            .then(res => res.json())
            .then(data => setServices(data))
     }, [])
@@ -24,7 +24,7 @@ const Services = () => {
 
                 {
                     services.map(service => <Service
-                        key={service.name}
+                        key={service._id}
                         service={service}
                     >
 
