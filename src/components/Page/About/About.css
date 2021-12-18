@@ -25,9 +25,12 @@
 }
 
 .about_button {
-    background-color: rgb(221, 11, 134) !important;
-    color: white !important;
+    background-color: rgb(18, 177, 156) !important;
+    color: rgb(17, 16, 16) !important;
     text-decoration: none;
+    border-radius: 5px;
+    width: 20%;
+    height: 13%;
 }
 
 

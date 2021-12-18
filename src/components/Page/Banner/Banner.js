@@ -54,7 +54,7 @@ const Banner = () => {
 
 
                             <div className="home_button">
-                                <Button className="mb-2 mx-2 button_color">Read More</Button>
+                                <button className="mb-2 mx-2 button_color">Read More</button>
                     
                             </div>  
                             

@@ -32,7 +32,9 @@
 
 .button_color {
 
-    background-color: rgb(20, 20, 24) !important;
+    background-color: rgb(218, 25, 67) !important;
+    color: white !important;
+    border-radius: 5px;
 }
 
 

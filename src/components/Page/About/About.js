@@ -17,7 +17,7 @@ const About = () => {
                     <span className="health_care">Hard work is a great tool to make dreams come true</span>
                     <p className="p_tag">This website is Learning School related only. School learning is the acquisition of knowledge, subject matter, information, understanding, and skill from teaching. Research on learning and memory provides teachers with essential scientific knowledge that is useful for understanding and improving school learning.</p>
 
-                    <Link to="/" className="button_color"><Button>Read More</Button></Link>
+                    <Link to="/"><button className="about_button">Read More</button></Link>
                 </div>
             </div>
 
