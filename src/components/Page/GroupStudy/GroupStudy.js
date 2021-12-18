@@ -4,6 +4,7 @@ import image1 from '../../../image/studyG/agl.png';
 import image2 from '../../../image/studyG/pm.png';
 import image3 from '../../../image/studyG/sm.png'
 import './GroupStudy.css'
+import { Link } from 'react-router-dom';
 
 const GroupStudy = () => {
     return (
