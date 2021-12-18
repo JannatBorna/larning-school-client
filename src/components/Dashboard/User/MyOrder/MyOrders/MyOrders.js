@@ -1,18 +1,91 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import swal from 'sweetalert';
+import './MyOrders.css';
+import MyOrder from '../MyOrder/MyOrder';
+import useAuth from '../../../../../hook/useAuth';
 
 const MyOrders = () => {
-    const [myOrders, setMyOrders] = useState({})
+
+    const [myBookings, setMyBookings] = useState([]);
+
+
+    const { user } = useAuth()
+
 
     useEffect(() => {
         fetch('https://warm-oasis-87609.herokuapp.com/orders')
-        .then(res => res.json())
-        .then(data => setMyOrders(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setMyBookings(data))
+    }, [])
+
+    const [products, setProducts] = useState([]);
+
+
+    useEffect(() => {
+        fetch('https://warm-oasis-87609.herokuapp.com/services')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+    }, [])
+
+
+
+
+    const handleDelete = id => {
+        const url = `https://warm-oasis-87609.herokuapp.com/orders/${id}`
+        fetch(url, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount) {
+
+                    swal({
+                        title: "Are you sure?",
+                        text: "Once deleted, you will not be able to recover this imaginary file!",
+                        icon: "warning",
+                        buttons: true,
+                        dangerMode: true,
+                    })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("Poof! Your imaginary file has been deleted!", {
+                                    icon: "success",
+                                });
+                            } else {
+                                swal("Your imaginary file is safe!");
+                            }
+                        });
+                    const remaining = myBookings.filter(myBookings => myBookings._id !== id);
+                    setMyBookings(remaining);
+                }
+
+            })
+    }
 
 
     return (
         <div>
-            <h2>My Orders:{myOrders.lenth} </h2>
+            <h1 className="my_orders mt-5"><span className="color-hi"><i className="fas fa-heading"></i><span className="color-text">ello...</span></span> <span className="color-length">{user.displayName}</span></h1>
+            <br />
+            <h2 className="my-4 orders_length"><span className="color-text">Your Order: </span><span className="color-length">{myBookings.length}</span> <span className="color-text">items</span></h2>
+            <div className="reviews-container">
+
+
+
+                {
+                    myBookings.map(myBooking => <MyOrder
+
+                        key={myBooking.name}
+                        myBooking={myBooking}
+                        handleDelete={handleDelete}
+                        products={products}
+                    >
+
+                    </MyOrder>)
+                }
+            </div>
         </div>
     );
 };

@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 import { Button } from '@mui/material';
 import useAuth from '../../../../hook/useAuth';
 import DashboardHome from './../DashboardHome/DashboardHome';
@@ -74,7 +74,7 @@ function Dashboard(props) {
 
                     <br />
 
-                    <Link to={`dashboard/manageServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Services</Button></Link>
+                    <Link to={"/dashboard/manageServices"} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Services</Button></Link>
                 </Box>
             }
 
@@ -168,6 +168,8 @@ function Dashboard(props) {
             <Typography>
                 <DashboardHome></DashboardHome>
             </Typography>
+
+            <Outlet />
         </Box>
     );
 }
@@ -181,9 +183,3 @@ Dashboard.propTypes = {
 };
 
 export default Dashboard;
-
-
-
-
-
-

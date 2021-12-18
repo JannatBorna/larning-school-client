@@ -1,0 +1,60 @@
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.color-hi {
+    color: rgb(0, 0, 0) !important;
+    font-size: 35px;
+}
+
+.color-length {
+    color: rgb(224, 89, 89) !important;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.fa-heading {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(224, 89, 89) !important;
+}
+
+
+.my_orders {
+    margin-left: -200px;
+}
+
+.orders_length {
+    margin-left: -200px;
+}
+
+@media only screen and (max-width:688px) {
+    .reviews-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .my_orders {
+        margin-left: -200px;
+    }
+
+    .orders_length {
+        margin-left: -200px;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: -200px;
+    }
+
+    .my_orders {
+        margin-left: -200px;
+    }
+
+    .orders_length {
+        margin-left: -200px;
+    }
+}

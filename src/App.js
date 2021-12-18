@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, BrowserRouter as Router, IonRouterOutlet } from "react-router-dom";
 import Header from './components/Page/Shared/Header/Header';
 import Footer from './components/Page/Shared/Footer/Footer';
 import Home from './components/Page/Home/Home';
@@ -52,15 +52,14 @@ function App() {
             </Route>
       
 
-             <Route path="/dashboard"
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }>
-           
-  {/* nesting route */}
+         
+              
+            
              
+            
+             
+          
+         <Route path="/dashboard" element={<PrivateRoute> <Dashboard /> </PrivateRoute>}>  
 
               <Route  path={`/dashboard/makeAdmin`}
                 element={
@@ -77,12 +76,12 @@ function App() {
                    <ManageAllOrder></ManageAllOrder>
                  } />
               
-              <Route path={`/dashboard/manageServices`}
+              <Route path={"/dashboard/manageServices"}
                 element={
                  <ManageServices></ManageServices>
                 } />
              
- {/*  user */} 
+ 
                   
               <Route path={`/dashboard/addFeedback`}
                 element={
@@ -97,8 +96,7 @@ function App() {
                 } />
            </Route>           
                  
-     
-              
+           
 
 {/* ----------------------------------*/}
 
