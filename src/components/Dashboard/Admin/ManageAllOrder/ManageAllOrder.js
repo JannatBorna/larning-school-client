@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import swal from 'sweetalert';
+import './ManageAllOrder.css'
 
 
 const ManageAllOrder = () => {
@@ -68,8 +69,8 @@ const ManageAllOrder = () => {
 
 
     return (
-        <div>
-            <h2 className="mb-5">Manage A<span className="color-product">LL</span> <span className="text-color later-color">Order</span> </h2>
+        <div className='manage_all'>
+            <h2 className="mb-5 mt-5 manage_text">Manage All Order</h2>
 
             <Container>
                 <div className="manage-products">
@@ -80,10 +81,11 @@ const ManageAllOrder = () => {
                             <div className="manage-product">
                                 <img className="w-25" src={manageAllOrder.img} alt="" />
                                 <h4 className="name-text my-2">{manageAllOrder.name}</h4>
-                                <small className="description-text">{manageAllOrder.description}</small>
-                                <h6 className="price-text"><p>Price: {manageAllOrder.price}</p></h6>
+                                <small className="description-text">{manageAllOrder.describe}</small>
+                                <h6 className="price-text"><p>Price:$ {manageAllOrder.price}</p></h6>
 
                                 <button className="btn btn-secondary mx-5" onClick={() => handleUpdate(manageAllOrder._id)}>Update</button>
+                                
                                 <button className="btn btn-secondary" onClick={() => handleDelete(manageAllOrder._id)}>Delete</button>
                             </div>
 

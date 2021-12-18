@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, TextField, Alert } from '@mui/material';
 import swal from 'sweetalert';
+import './MakeAdmin.css';
 
 
 const MakeAdmin = () => {
@@ -36,19 +37,24 @@ const MakeAdmin = () => {
 
 
     return (
-        <div>
-            <h2 className="my-4">Make <span className="color-product">An</span> Admin</h2>
+        <div >
+            <h2 className="my-4 admin_text">Make An Admin</h2>
 
 
             <div className="my-5">
-                <form onSubmit={handleAdminSubmit}>
+                <form onSubmit={handleAdminSubmit} className='make_admin'>
                     <TextField
-                        sx={{ width: '50%' }}
+                        sx={{ width: '70%' }}
                         label="Email"
                         type="email"
                         onBlur={handleOnBlur}
                         variant="standard" />
-                    <Button type="submit" variant="contained">Make Admin</Button>
+
+                        <br />
+                    <br />
+
+                    <button className='admin_button' type="submit" variant="contained">Make Admin</button>
+
                 </form>
 
                 {
