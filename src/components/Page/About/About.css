@@ -1,0 +1,45 @@
+.container_banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(246, 255, 252) !important;
+}
+
+.container_header {
+    margin: 20px;
+    padding: 20px;
+}
+
+.color_text {
+    color: coral !important;
+
+}
+
+.health_care {
+    color: rgb(87, 87, 87) !important;
+    font-size: 27px;
+}
+
+.p_tag {
+    font-size: 13px;
+    color: rgb(126, 122, 122) !important;
+}
+
+.about_button {
+    background-color: rgb(221, 11, 134) !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width:688px) {
+    .container_banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .container_banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

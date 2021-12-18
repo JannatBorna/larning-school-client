@@ -15,11 +15,12 @@ import Dashboard from './components/Dashboard/Dashboard/Dasboard/Dashboard';
 import MakeAdmin from './components/Dashboard/Admin/MakeAdmin/MakeAdmin';
 import AddServices from './components/Dashboard/Admin/AddServices/AddServices';
 import ManageAllOrder from './components/Dashboard/Admin/ManageAllOrder/ManageAllOrder';
-import Pay from './components/Dashboard/User/Pay/Pay';
 import AddFeedback from './components/Dashboard/User/Feedback/AddFeedback/AddFeedback';
 import MyOrders from './components/Dashboard/User/MyOrder/MyOrders/MyOrders';
 import ManageServices from './components/Dashboard/Admin/ManageServices/ManageServices';
 import DashboardHome from './components/Dashboard/Dashboard/DashboardHome/DashboardHome';
+import GroupStudy from './components/Page/GroupStudy/GroupStudy';
+import About from './components/Page/About/About';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             <Route exact path="/banner" element={<Banner />}>
             </Route>
 
+            <Route path="/about" element={<About />}>
+            </Route>
+
             <Route exact path="/ourServices" element={
             <PrivateRoute>
               <Services />
@@ -44,49 +48,18 @@ function App() {
             }>
             </Route>
             
-
-            <Route path="/dashboard"
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }>
-              {/* // nesting route */}
-
-              <Route exact path="/dashboard" element={<DashboardHome></DashboardHome>}>
-
-              </Route>
-            
-              <Route path={`/dashboard/makeAdmin`}
-                element={
-                  
-                    <MakeAdmin></MakeAdmin>
-                
-                }>
-              </Route>
-
-              {/* <Route path={`/dashboard/addDoctor`}
-                element={
-                  <AdminRoute>
-                    <AddDoctor></AddDoctor>
-                  </AdminRoute>
-                }>
-              </Route> */}
-
-
-
+            <Route path="/groupStudy" element={<GroupStudy />}>
             </Route>
+      
 
-           
-
-          {/*   <Route path="/dashboard"
+             <Route path="/dashboard"
               element={
                 <PrivateRoute>
                   <Dashboard />
                 </PrivateRoute>
               }>
-              // nesting route
-
+           
+  {/* nesting route */}
              
 
               <Route  path={`/dashboard/makeAdmin`}
@@ -109,7 +82,7 @@ function App() {
                  <ManageServices></ManageServices>
                 } />
              
- {/*  // user 
+ {/*  user */} 
                   
               <Route path={`/dashboard/addFeedback`}
                 element={
@@ -122,7 +95,7 @@ function App() {
                 element={
                  <MyOrders></MyOrders>
                 } />
-           </Route>   */}         
+           </Route>           
                  
      
               

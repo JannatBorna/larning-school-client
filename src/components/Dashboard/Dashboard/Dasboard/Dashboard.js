@@ -44,10 +44,7 @@ function Dashboard(props) {
 
             {
                 !admin && <Box>
-                    <Link to={`/dashboard/pay`} className="decoration"><Button className="dash-button my-3" color="inherit">Pay</Button></Link>
-
-                    <br />
-
+                    
                     <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
 
                     <br />

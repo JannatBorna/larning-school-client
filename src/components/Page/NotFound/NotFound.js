@@ -12,7 +12,7 @@ const NotFound = () => {
             <div className="container not-found">
                 <img src={notfound} alt="" />
                 <h1>Page Not Found - S<i className="fas fa-sad-tear"></i>RRY</h1>
-                <Link as={HashLink} to="/"><button className="btn btn-dark text-white my-5"><i className="fas fa-arrow-left"></i> Go Back</button></Link>
+                <Link as={HashLink} to="/"><button className="found_button my-5"><i className="fas fa-arrow-left"></i> Go Back</button></Link>
 
             </div>
         </Col>
