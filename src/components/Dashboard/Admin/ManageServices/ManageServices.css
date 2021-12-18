@@ -30,7 +30,7 @@
 }
 
 .name-text {
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(97, 97, 97);
 }
 
@@ -48,7 +48,10 @@
 @media only screen and (max-width:688px) {
     .manage-products {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
+
+    
 }
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
