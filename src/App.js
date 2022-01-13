@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <AuthProvider>
         <Router>
-          <Header></Header>
+       
             <Routes>
               <Route exact path="/" element={<Home />}>
               </Route>
@@ -113,7 +113,7 @@ function App() {
             </Route>
 
             </Routes>
-          <Footer></Footer>
+        
         </Router> 
       </AuthProvider>
 

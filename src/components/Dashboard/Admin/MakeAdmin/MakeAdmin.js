@@ -38,13 +38,13 @@ const MakeAdmin = () => {
 
     return (
         <div >
-            <h2 className="my-4 admin_text">Make An Admin</h2>
+            <h2 className="my-4 admin_text ">Make An Admin</h2>
 
 
             <div className="my-5">
                 <form onSubmit={handleAdminSubmit} className='make_admin'>
                     <TextField
-                        sx={{ width: '70%' }}
+                        sx={{ width: '20%' }}
                         label="Email"
                         type="email"
                         onBlur={handleOnBlur}
@@ -53,7 +53,7 @@ const MakeAdmin = () => {
                         <br />
                     <br />
 
-                    <button className='admin_button' type="submit" variant="contained">Make Admin</button>
+                    <Button className='admin_button' type="submit" variant="contained">Make Admin</Button>
 
                 </form>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown, Button } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../../../../image/logo/logo.png'
 import './Header.css'
 import useAuth from './../../../../hook/useAuth';
 
@@ -23,7 +22,7 @@ const Header = () => {
                             <Nav.Link className="nav_bar" as={HashLink} to="/ourServices#ourServices">Our services</Nav.Link>
                             <Nav.Link className="nav_bar" as={HashLink} to="/about#about">About</Nav.Link>
                            
-                            <Nav.Link className="nav_bar" as={HashLink} to="/groupStudy#groupStudy">Grout Study</Nav.Link>
+                            {/* <Nav.Link className="nav_bar" as={HashLink} to="/groupStudy#groupStudy">Grout Study</Nav.Link> */}
                             <Nav.Link className="nav_bar dashboard" as={HashLink} to="/dashboard#dashboard">Dashboard</Nav.Link>
 
                            

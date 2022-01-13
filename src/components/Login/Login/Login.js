@@ -3,6 +3,8 @@ import { Alert, AlertTitle, Button, CircularProgress, Container, TextField, } fr
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from './../../../hook/useAuth';
 import './Login.css'
+import Footer from '../../Page/Shared/Footer/Footer';
+import Header from '../../Page/Shared/Header/Header';
 
 const Login = () => {
 
@@ -40,70 +42,74 @@ const Login = () => {
 
 
     return (
-        <Container >
-            <form onSubmit={handleLoginSubmit} className="login_container mt-5"> 
-                <h2 className="login mt-3 mb-4">Login With</h2>
-                        <TextField
-                            sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Email"
-                            name="email"
-                            onChange={handleOnBlur}
-                            variant="standard" />
+        <div>
+            <Header></Header>
+            <Container >
+                <form onSubmit={handleLoginSubmit} className="login_container mt-5">
+                    <h2 className="login mt-3 mb-4">Login With</h2>
+                    <TextField
+                        sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Email"
+                        name="email"
+                        onChange={handleOnBlur}
+                        variant="standard" />
 
-                        <TextField
+                    <TextField
 
-                            sx={{ width: '75%', m: 1 }}
-                            id="standard-password-input"
-                            label="Password"
-                            type="password"
-                            name="password"
-                            onChange={handleOnBlur}
-                            autoComplete="current-password"
-                            variant="standard" />
+                        sx={{ width: '75%', m: 1 }}
+                        id="standard-password-input"
+                        label="Password"
+                        type="password"
+                        name="password"
+                        onChange={handleOnBlur}
+                        autoComplete="current-password"
+                        variant="standard" />
 
 
-                        <Button className="login_button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
+                    <Button className="login_button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
 
-                        <NavLink
-                            style={{ textDecoration: 'none' }}
-                            to="/register">
-                            <Button variant="text" className="login_text">New User?  
+                    <NavLink
+                        style={{ textDecoration: 'none' }}
+                        to="/register">
+                        <Button variant="text" className="login_text">New User?
                             <span className="please_register mx-1">Register Now</span></Button>
-                        </NavLink>
+                    </NavLink>
 
 
-                        {/* loading */}
-                        {
-                            isLoading && <CircularProgress
-                                color="secondary" />
-                        }
+                    {/* loading */}
+                    {
+                        isLoading && <CircularProgress
+                            color="secondary" />
+                    }
 
-                        {/* register  successfully*/}
-                        {
-                            user?.email && <Alert severity="success">Login successfully!</Alert>
-                        }
+                    {/* register  successfully*/}
+                    {
+                        user?.email && <Alert severity="success">Login successfully!</Alert>
+                    }
 
-                        {/* error message */}
+                    {/* error message */}
 
-                        {
-                            authError && <Alert severity="error">
-                                <AlertTitle>Error</AlertTitle>
-                                {authError}
-                            </Alert>
-                        }
+                    {
+                        authError && <Alert severity="error">
+                            <AlertTitle>Error</AlertTitle>
+                            {authError}
+                        </Alert>
+                    }
 
-                        {/*--------- Google--------- */}
-                        <br />
-                        <button 
+                    {/*--------- Google--------- */}
+                    <br />
+                    <button
                         onClick={handleGoogleSign}
                         className="btn_google mx-2 mb-4"><i className="fab fa-google"></i> Google</button>
 
-                        {/* ---------Github--------- */}
-                        <button 
+                    {/* ---------Github--------- */}
+                    <button
                         onClick={handleGithubSign}
                         className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
 
-                    </form>
-        </Container>
+                </form>
+            </Container>
+            <Footer></Footer>
+        </div>
     );
 };
 

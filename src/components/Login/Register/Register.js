@@ -4,6 +4,8 @@ import { NavLink, useLocation,  } from 'react-router-dom';
 import useAuth from '../../../hook/useAuth';
 import { useNavigate } from 'react-router-dom';
 import './Register.css'
+import Footer from '../../Page/Shared/Footer/Footer';
+import Header from '../../Page/Shared/Header/Header';
 
 const Register = () => {
           
@@ -46,91 +48,96 @@ const Register = () => {
     }
 
     return (
-        <Container><h2 className="register mt-3 mb-4">Register With</h2>
-         {
-                !isLoading &&
-                <form onSubmit={handleLoginSubmit} className="login_container mt-5"> {/*  */}
+       <div>
+           <Header></Header>
+            <Container><h2 className="register mt-3 mb-4">Register With</h2>
+                {
+                    !isLoading &&
+                    <form onSubmit={handleLoginSubmit} className="login_container mt-5"> {/*  */}
 
-                    <TextField
-                        sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Name"
-                        name="name"
-                        onBlur={handleOnBlur}
-                        variant="standard" />
+                        <TextField
+                            sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Name"
+                            name="name"
+                            onBlur={handleOnBlur}
+                            variant="standard" />
 
-                    <TextField
-                        sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Email"
-                        name="email"
-                        onChange={handleOnBlur}
-                        variant="standard" />
+                        <TextField
+                            sx={{ width: '75%', m: 1 }} id="standard-basic" label="Your Email"
+                            name="email"
+                            onChange={handleOnBlur}
+                            variant="standard" />
 
-                    <TextField
-                        sx={{ width: '75%', m: 1 }}
-                        id="standard-password-input"
-                        label="Password"
-                        type="password"
-                        name="password"
-                        onBlur={handleOnBlur}
-                        autoComplete="current-password"
-                        variant="standard" />
+                        <TextField
+                            sx={{ width: '75%', m: 1 }}
+                            id="standard-password-input"
+                            label="Password"
+                            type="password"
+                            name="password"
+                            onBlur={handleOnBlur}
+                            autoComplete="current-password"
+                            variant="standard" />
 
-                    <TextField
-                        sx={{ width: '75%', m: 1 }}
-                        id="standard-password-input"
-                        label="Retype Password"
-                        type="password"
-                        name="password2"
-                        onBlur={handleOnBlur}
-                        autoComplete="current-password"
-                        variant="standard" />
-
-
-                    <Button className="register_button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
-
-                    <NavLink
-                        style={{ textDecoration: 'none' }}
-                        to="/login">
-                        <Button variant="text" className="login_text">All Ready Register?
-                            <span className="please_register mx-1">Login</span></Button>
-                    </NavLink>
+                        <TextField
+                            sx={{ width: '75%', m: 1 }}
+                            id="standard-password-input"
+                            label="Retype Password"
+                            type="password"
+                            name="password2"
+                            onBlur={handleOnBlur}
+                            autoComplete="current-password"
+                            variant="standard" />
 
 
-                    {/*--------- Google--------- */}
-                    <br />
-                    <button
-                        onClick={handleGoogleSign}
-                        className="btn_google mx-2 mb-4"><i className="fab fa-google"></i> Google</button>
+                        <Button className="register_button" sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
 
-                    {/* ---------Github--------- */}
-                    <button
-                        onClick={handleGithubSign}
-                        className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
-
-                </form>
-
-         }
+                        <NavLink
+                            style={{ textDecoration: 'none' }}
+                            to="/login">
+                            <Button variant="text" className="login_text">All Ready Register?
+                                <span className="please_register mx-1">Login</span></Button>
+                        </NavLink>
 
 
-            {/* loading */}
-            {
-                isLoading && <CircularProgress
-                    color="secondary" />
-            }
+                        {/*--------- Google--------- */}
+                        <br />
+                        <button
+                            onClick={handleGoogleSign}
+                            className="btn_google mx-2 mb-4"><i className="fab fa-google"></i> Google</button>
 
-            {/* register  successfully*/}
-            {
-                user?.email && <Alert severity="success">Login successfully!</Alert>
-            }
+                        {/* ---------Github--------- */}
+                        <button
+                            onClick={handleGithubSign}
+                            className="btn_github mx-2 mb-4"><i className="fab fa-github"></i> Github</button>
 
-            {/* error message */}
+                    </form>
 
-            {
-                authError && <Alert severity="error">
-                    <AlertTitle>Error</AlertTitle>
-                    {authError}
-                </Alert>
-            }
+                }
 
-        </Container>
+
+                {/* loading */}
+                {
+                    isLoading && <CircularProgress
+                        color="secondary" />
+                }
+
+                {/* register  successfully*/}
+                {
+                    user?.email && <Alert severity="success">Login successfully!</Alert>
+                }
+
+                {/* error message */}
+
+                {
+                    authError && <Alert severity="error">
+                        <AlertTitle>Error</AlertTitle>
+                        {authError}
+                    </Alert>
+                }
+
+            </Container>
+
+            <Footer></Footer>
+       </div>
     );
 };
 

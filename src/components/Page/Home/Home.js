@@ -4,17 +4,21 @@ import Banner from '../Banner/Banner';
 import HomeServices from '../HomeServices/HomeServices/HomeServices';
 import Instructors from '../Instructors/Instructors';
 import GroupStudy from '../GroupStudy/GroupStudy';
+import Header from '../Shared/Header/Header';
+import Footer from '../Shared/Footer/Footer';
 
 
 
 const Home = () => {
     return (
         <div>
+            <Header></Header>
             <Banner></Banner>
             <HomeServices></HomeServices>
             <Instructors></Instructors>
             <GroupStudy></GroupStudy>
             <Feedbacks></Feedbacks>
+            <Footer></Footer>
         </div>
     );
 };

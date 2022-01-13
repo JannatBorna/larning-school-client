@@ -13,7 +13,7 @@
          
 
 
-####  description
+####  description ###
   * My website name is Learning School. This website is Learning School related only. School learning is the acquisition of knowledge, subject matter, information, understanding, and skill from teaching. Research on learning and memory provides teachers with essential scientific knowledge that is useful for understanding and improving school learning.
 
 
