@@ -45,11 +45,11 @@ const AddFeedback = () => {
         e.preventDefault();
     }
     return (
-        <div>
-            <div className="add-review mx-5">
-                <h2 className="color-text mt-5">Add Feedback</h2>
-
-                <form onSubmit={handleUser}>
+    <div className='mt-5'>  
+        <h2 className="color-text mt-5 my-5 ">Add Feedback</h2>
+            
+           <div className="add-review mt-5">
+               <form onSubmit={handleUser}>
                     <input type="text" placeholder="Name" ref={nameRef} value={user?.displayName} />
                     <input type="img" placeholder="image url" ref={imgRef} value={user?.img} />
                     <textarea {...register("description")} placeholder="description" ref={descriptionRef} />
@@ -58,11 +58,13 @@ const AddFeedback = () => {
 
                     <input className="btn btn-secondary" type="submit" value="Submit" />
                 </form>
-
-
             </div>
         </div>
+             
     );
 };
 
-export default AddFeedback;
+export default AddFeedback;   
+
+
+           

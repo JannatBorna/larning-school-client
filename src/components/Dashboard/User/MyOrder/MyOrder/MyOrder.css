@@ -1,12 +1,10 @@
 .my-booking {
-    margin: 50px;
-    padding: 10px;
     border: 1px solid rgb(228, 226, 226);
     height: 300px;
-    width: 90%;
+    width: 80%;
     border-radius: 7px;
-    margin-left: -140px;
-}
+    margin-right: 270px;
+} 
 
 .my-booking:hover {
     z-index: 1;

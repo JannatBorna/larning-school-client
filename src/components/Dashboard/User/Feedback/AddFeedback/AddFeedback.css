@@ -1,11 +1,11 @@
 .add-review form {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    /* justify-content: center;
+    align-items: center; */
+    width: 80%;
     height: 300px;
-    margin-right: 800px;
+    margin-right: 900px;
 
 }
 
@@ -27,4 +27,7 @@ textarea {
     font-size: 40px;
     color: rgb(18, 109, 114) !important;
     font-family: cursive;
+    margin-right: 120px;
+
+
 }

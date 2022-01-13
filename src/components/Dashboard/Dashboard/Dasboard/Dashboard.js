@@ -9,92 +9,223 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import {Link, Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import { Button } from '@mui/material';
 import useAuth from '../../../../hook/useAuth';
 import DashboardHome from './../DashboardHome/DashboardHome';
+import { Person, Logout, Login } from "@mui/icons-material";
 import './Dashboard.css'
+import { NavLink } from 'react-router-dom';
 
 
 
 
 
-const drawerWidth = 185;
+const drawerWidth = 240;
 
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { admin, logOut } = useAuth();
+    const { user, admin, logOut } = useAuth();
+
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
     
 
     const drawer = (
-        <div>
-            <Toolbar />
+        <Box style={{ backgroundColor: "#55bdca", height: "100%" }}>
+
+            <NavLink
+                style={{ textDecoration: "none", color: "white", backgroundColor: "#55bdca", fontSize: "30px", padding: "20px", display: "flex", justifyContent: "center" }}
+                to="/dashboard"
+            >
+                <Typography style={{ fontSize: "29px" }}>
+                    Dashboard
+                </Typography>
+
+            </NavLink>
+
+            {/* <Toolbar /> */}
             <Divider />
-            <Link to="/" className="decoration"><Button className="dash-button my-3" color="inherit">Home</Button></Link>
 
-            <br />
-
-            <Link to="/ourServices" className="decoration"><Button className="dash-button my-3" color="inherit">Services</Button></Link>
-
-            <br />
-
-            {
-                !admin && <Box>
-                    
-                    <Link to={`/dashboard/myOrders`} className="decoration"><Button className="dash-button my-3" color="inherit">My Order</Button></Link>
-
-                    <br />
-
-                    <Link to={`/dashboard/addFeedback`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Feedback</Button></Link>
-
-                    <br />
-
-                    <Button onClick={logOut}
-                        className="btn-logout mx-2" variant="secondary">Logout
+           <div>
+      
+                <NavLink
+                    style={{
+                        display: "block",
+                        marginY: 3,
+                        textDecoration: "none",
+                        color: "black",
+                    }}
+                    to="/home"
+                >
+                    <Button
+                        sx={{ backgroundColor: "#55bdca", color: "black" }}
+                        color="inherit"
+                    >
+                        Home Page
                     </Button>
-                </Box>
-            }
+                </NavLink>
 
-            
-            {
-                admin && <Box>
-                    <Link to="/dashboard/makeAdmin" className="decoration"><Button className="dash-button my-3" color="inherit">Make Admin</Button></Link>
+                <NavLink
+                    style={{
+                        display: "block",
+                        marginY: 3,
+                        textDecoration: "none",
+                        color: "black",
+                    }}
+                    to="/ourServices"
+                >
+                    <Button
+                        sx={{ backgroundColor: "#55bdca", color: "black" }}
+                        color="inherit"
+                    >
+                        Our Services
+                    </Button>
+                </NavLink>
 
-                    <br />
+                {
+                    !admin && <Box>
 
-                    <Link to={`/dashboard/addServices`} className="decoration"><Button className="dash-button my-3" color="inherit">Add Services</Button></Link>
+                        <NavLink
+                            style={{
+                                display: "block",
+                                marginY: 3,
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                            to={`/dashboard/myOrders`}
+                        >
+                            <Button
+                                sx={{ backgroundColor: "#55bdca", color: "whtie" }}
+                                color="inherit"
+                            >
+                                My Orders
+                            </Button>
+                        </NavLink>
 
-                    <br />
 
-                    <Link to={`/dashboard/manageAllOrder`} className="decoration"><Button className="dash-button my-3" color="inherit">Manage All Order</Button></Link>
+                        <NavLink
+                            style={{
+                                display: "block",
+                                marginY: 3,
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                            to={`/dashboard/addFeedback`}
+                        >
+                            <Button
+                                sx={{ backgroundColor: "#55bdca", color: "whtie" }}
+                                color="inherit"
+                            >
+                                Add Feedback
+                            </Button>
+                        </NavLink>
 
-                    <br />
 
-                    <Link to={"/dashboard/manageServices"} className="decoration"><Button className="dash-button my-3" color="inherit">Manage Services</Button></Link>
-                </Box>
-            }
+                        {/* <Button onClick={logOut}
+                            className="btn-logout mx-2" variant="secondary">Logout
+                        </Button> */}
+                    </Box>
+                }
 
+
+                {
+                    admin && <Box>
+
+                        <NavLink
+                            style={{
+                                display: "block",
+                                marginY: 3,
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                            to="/dashboard/makeAdmin"
+                        >
+                            <Button
+                                sx={{ backgroundColor: "#55bdca", color: "black" }}
+                                color="inherit"
+                            >
+                                Make Admin
+                            </Button>
+                        </NavLink>
+
+                        <NavLink
+                            style={{
+                                display: "block",
+                                marginY: 3,
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                            to={`/dashboard/addServices`}
+                        >
+                            <Button
+                                sx={{ backgroundColor: "#55bdca", color: "whtie" }}
+                                color="inherit"
+                            >
+                                Add Services
+                            </Button>
+                        </NavLink>
+
+
+                        <NavLink
+                            style={{
+                                display: "block",
+                                marginY: 3,
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                            to={`/dashboard/manageAllOrder`} 
+                        >
+                            <Button
+                                sx={{ backgroundColor: "#55bdca", color: "whtie" }}
+                                color="inherit"
+                            >
+                                Mange All Orders
+                            </Button>
+                        </NavLink>
+
+                        <NavLink
+                            style={{
+                                display: "block",
+                                marginY: 3,
+                                textDecoration: "none",
+                                color: "black",
+                            }}
+                            to={"/dashboard/manageServices"} 
+                        >
+                            <Button
+                                sx={{ backgroundColor: "#55bdca", color: "whtie" }}
+                                color="inherit"
+                            >
+                                Manage Services
+                            </Button>
+                        </NavLink>
+
+                    </Box>
+                }
 
 
         </div>
+
+
+        </Box>
     );
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex' }} >
+        <Box sx={{ display: 'flex', hight: "100%" }} >
             <CssBaseline />
             <AppBar
                 position="fixed"
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
-                    backgroundColor: 'cadetblue',
-                    height: '15%',
-                    color: 'Black'
+                    backgroundColor: "#1D2440",
+                    // height: '15%',
+                    // color: 'Black'
+                    paddingY: 1,
 
                 }}
             >
@@ -108,11 +239,24 @@ function Dashboard(props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap component="div">
-                        Dashboard
-                    </Typography>
+                     
+            {user?.email ? (
+                      <Box>
+                        <Typography variant="h6"
+                            sx={{
+                                display: "inline",
+                                backgroundColor: "#F27D42",
+                                borderBottom: "3px solid white",
+                                borderRadius: "10px",
+                                padding: "9px",
+                                marginY: "3px",
+                            }}
+                        >
+                            <Person /> {user.displayName}
+                        </Typography>
 
-                    <Typography>
+
+                        {/* <Typography>
                         {
                             admin && <Box>
                                 <Button onClick={logOut}
@@ -122,7 +266,33 @@ function Dashboard(props) {
                         }
 
 
-                    </Typography>
+                    </Typography> */}
+
+                        <Button
+                            sx={{
+                                backgroundColor: "#1D2440",
+                                color: "#D3BDBD",
+                                m: 2,
+                            }}
+                            variant="contained"
+                            onClick={logOut}
+                            color="inherit"
+                        >
+                            <Logout></Logout>
+                        </Button>
+                      </Box>
+
+                    ) : (
+
+                        <NavLink
+                            style={{ textDecoration: "none", color: "white", m: 2 }}
+                            to="/login"
+                        >
+                            <Button color="inherit">
+                                <Login />
+                            </Button>
+                        </NavLink>
+                    )}
                 </Toolbar>
             </AppBar>
             <Box
@@ -161,13 +331,9 @@ function Dashboard(props) {
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
-                <Toolbar />
+                <Toolbar /> 
 
             </Box>
-
-            <Typography>
-                <DashboardHome></DashboardHome>
-            </Typography>
 
             <Outlet />
         </Box>
