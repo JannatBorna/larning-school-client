@@ -6,9 +6,26 @@
     font-size: 13px;
 }
 
-/* .icon:hover {
-    background-color: rgb(194, 47, 47) !important;
-} */
+
+.icon_instagram:hover {
+    color: rgb(211, 88, 88) !important;
+    font-size: 24px;
+}
+
+.icon_twitter:hover {
+    color: rgb(106, 155, 189) !important;
+    font-size: 24px;
+}
+
+.icon_youtube:hover {
+    color: rgb(216, 70, 70) !important;
+    font-size: 24px;
+}
+
+.icon_facebook:hover {
+    color: rgb(79, 110, 211) !important;
+    font-size: 24px;
+}
 
 .icon_instagram {
     color: rgb(187, 24, 24) !important;
@@ -29,11 +46,6 @@
     color: rgb(26, 71, 218) !important;
     font-size: 24px;
 }
-
-/* .icon_instagram {
-    color: rgb(187, 24, 24) !important;
-    font-size: 24px;
-} */
 
 
 .footer-menu {
