@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 import banner from '../../../image/banner/banner.png'
 import './Banner.css'

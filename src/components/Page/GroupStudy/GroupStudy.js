@@ -4,9 +4,6 @@ import image1 from '../../../image/studyG/agl.png';
 import image2 from '../../../image/studyG/pm.png';
 import image3 from '../../../image/studyG/sm.png'
 import './GroupStudy.css'
-import { Link } from 'react-router-dom';
-import Footer from '../Shared/Footer/Footer';
-import Header from '../Shared/Header/Header';
 
 const GroupStudy = () => {
     return (
@@ -18,7 +15,7 @@ const GroupStudy = () => {
                     <Row>
                         <Col md={4} sm={12}>
                             <div className="study mb-4">
-                                <img className="w-100" src={image1} rounded />
+                                <img className="w-100" src={image1} alt="" rounded />
                                 <h4 className="name_text my-2">Our Assignment guidelines</h4>
                                 <button className="join_group">Join Group</button>
                             </div>
@@ -26,7 +23,7 @@ const GroupStudy = () => {
 
                         <Col md={4} sm={12}>
                             <div className="study">
-                                <img className="w-100" src={image2} rounded />
+                                <img className="w-100" src={image2} alt="" rounded />
                                 <h4 className="name_text my-2">Project Management</h4>
                                 <button className="join_group">Join Group</button>
                             </div>
@@ -34,7 +31,7 @@ const GroupStudy = () => {
 
                         <Col md={4} sm={12}>
                             <div className="study">
-                                <img className="w-100" src={image3} thumbnail />
+                                <img className="w-100" src={image3} alt="" thumbnail />
                                 <h4 className="name_text my-2">motivation to study</h4>
                                 <button className="join_group">Join Group</button>
                             </div>

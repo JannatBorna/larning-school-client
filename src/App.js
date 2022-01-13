@@ -1,7 +1,5 @@
 import './App.css';
-import { Routes, Route, BrowserRouter as Router, IonRouterOutlet } from "react-router-dom";
-import Header from './components/Page/Shared/Header/Header';
-import Footer from './components/Page/Shared/Footer/Footer';
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Home from './components/Page/Home/Home';
 import Banner from './components/Page/Banner/Banner';
 import Services from './components/Page/Services/Services/Services';
@@ -18,7 +16,6 @@ import ManageAllOrder from './components/Dashboard/Admin/ManageAllOrder/ManageAl
 import AddFeedback from './components/Dashboard/User/Feedback/AddFeedback/AddFeedback';
 import MyOrders from './components/Dashboard/User/MyOrder/MyOrders/MyOrders';
 import ManageServices from './components/Dashboard/Admin/ManageServices/ManageServices';
-import DashboardHome from './components/Dashboard/Dashboard/DashboardHome/DashboardHome';
 import GroupStudy from './components/Page/GroupStudy/GroupStudy';
 import About from './components/Page/About/About';
 

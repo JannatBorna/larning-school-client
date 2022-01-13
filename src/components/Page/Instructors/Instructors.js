@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import image1 from '../../../image/Instructors/team-1.png';
-import image2 from '../../../image/Instructors/team-2.png';
-import image3 from '../../../image/Instructors/team-3.png';
-import image4 from '../../../image/Instructors/team-4.png';
-import image5 from '../../../image/Instructors/team-5.png';
-import image6 from '../../../image/Instructors/team-6.png';
+import photo1 from '../../../image/Instructors/team-1.png';
+import photo2 from '../../../image/Instructors/team-2.png';
+import photo3 from '../../../image/Instructors/team-3.png';
+import photo4 from '../../../image/Instructors/team-4.png';
+import photo5 from '../../../image/Instructors/team-5.png';
+import photo6 from '../../../image/Instructors/team-6.png';
 import './Instructors.css'
 
 
@@ -26,7 +26,7 @@ const Instructors = () => {
                                         <div className="front_side">
                                             <div className="card">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid w-100" src={image1} alt="card image" /></p>
+                                                    <p><img className="img-fluid w-100" src={photo1} alt="" /></p>
                                                     <h4 className="card-title">Emma Hart Willard</h4>
                                                    
                                                     <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
@@ -64,7 +64,7 @@ const Instructors = () => {
                                         <div className="front_side">
                                             <div className="card">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid w-100" src={image2} alt="card image" /></p>
+                                                    <p><img className=" img-fluid w-100" src={photo2} alt="" /></p>
                                                     <h4 className="card-title">Anton Shas</h4>
 
                                                     <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
@@ -99,7 +99,7 @@ const Instructors = () => {
                                         <div className="front_side">
                                             <div className="card">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid w-100" src={image3} alt="card image" /></p>
+                                                    <p><img className=" img-fluid w-100" src={photo3} alt="" /></p>
                                                     <h4 className="card-title">Jin Anne</h4>
 
                                                     <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
@@ -135,7 +135,7 @@ const Instructors = () => {
                                         <div className="front_side">
                                             <div className="card">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid w-100" src={image4} alt="card image" /></p>
+                                                    <p><img className=" img-fluid w-100" src={photo4} alt="" /></p>
                                                     <h4 className="card-title">Yaron Schoen</h4>
 
                                                     <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
@@ -173,7 +173,7 @@ const Instructors = () => {
                                         <div className="front_side">
                                             <div className="card">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid w-100" src={image5} alt="card image" /></p>
+                                                    <p><img className=" img-fluid w-100" src={photo5} alt="" /></p>
                                                     <h4 className="card-title">Mike Kus</h4>
 
                                                     <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
@@ -210,7 +210,7 @@ const Instructors = () => {
                                         <div className="front_side">
                                             <div className="card">
                                                 <div className="card-body text-center">
-                                                    <p><img className=" img-fluid w-100" src={image6} alt="card image" /></p>
+                                                    <p><img className=" img-fluid w-100" src={photo6} alt="" /></p>
                                                     <h4 className="card-title">Jeffrey Ze</h4>
 
                                                     <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>

@@ -13,7 +13,6 @@ import {
     faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import logo from '../../../../image/logo/logo.png'
 
 const Footer = () => {
     return (
