@@ -32,8 +32,25 @@
     color: gray;
 }
 
-.app_button{
+.app_button {
     background-color: rgb(202, 15, 77) !important;
     color: white !important;
     border-radius: 4px;
+}
+
+
+@media only screen and (max-width:688px) {
+    .card {
+        width: 40ch;
+        height: 40ch;
+    }
+
+}
+
+@media only screen and (min-width:689px) and (max-width: 991px) {
+    .card {
+        width: 40ch;
+        height: 40ch;
+    }
+
 }

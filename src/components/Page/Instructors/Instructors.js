@@ -13,7 +13,6 @@ const Instructors = () => {
     return (
         <div>
             <Container>
-
                 <section id="team" className="pb-5">
                     <div className="container">
                         <h5 className="section-title h1">Our Instructor</h5>
@@ -251,3 +250,4 @@ const Instructors = () => {
 };
 
 export default Instructors;
+                

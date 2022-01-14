@@ -22,7 +22,7 @@ const GroupStudy = () => {
                         </Col>
 
                         <Col md={4} sm={12}>
-                            <div className="study">
+                            <div className="study my-5">
                                 <img className="w-100" src={image2} alt="" rounded />
                                 <h4 className="name_text my-2">Project Management</h4>
                                 <button className="join_group">Join Group</button>
