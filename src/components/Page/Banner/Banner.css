@@ -37,28 +37,50 @@
     height: 40px;
     font-size: 20px;
     border-radius: 5px;
-    
-    
+
+
 }
 
 
 @media only screen and (max-width:688px) {
-    #banner {
+    /* #banner {
         background-color: #e0c475 !important;
         font-family: cursive;
-    }
+    } */
 
-    .banner_text {
+    /* .banner_text {
         font-size: 10px;
         color: rgb(163, 160, 160);
         margin-left: -100px;
+    } */
+
+    .button_color {
+        width: 30%;
+        height: 40px;
+        font-size: 9px;
     }
+
+    .home_button {
+        margin-right: -50px;
+    }
+
 }
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
-    #banner {
+    /* #banner {
         background-color: #e0c475 !important;
         font-family: cursive;
+    } */
+
+    .button_color {
+
+        width: 150%;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .home_button {
+        margin-right: 490px;
     }
 
 
