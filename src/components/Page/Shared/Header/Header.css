@@ -60,7 +60,8 @@
 
 @media only screen and (max-width:688px) {
     #responsive-navbar-nav {
-        color: rgb(163, 154, 154) !important;
+        color: rgb(211, 25, 25) !important;
+      
 
 
     }
@@ -68,7 +69,7 @@
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
     #responsive-navbar-nav {
-        color: rgb(167, 156, 156) !important;
+        color: rgb(238, 21, 21) !important;
 
     }
 }

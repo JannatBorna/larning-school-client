@@ -27,14 +27,18 @@
 
 
 .home_button {
-    margin-right: 430px;
+    margin-right: 488px;
 }
 
 .button_color {
-
     background-color: rgb(218, 25, 67) !important;
     color: white !important;
+    width: 55%;
+    height: 40px;
+    font-size: 20px;
     border-radius: 5px;
+    
+    
 }
 
 

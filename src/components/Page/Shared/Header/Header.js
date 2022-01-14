@@ -7,14 +7,14 @@ import useAuth from './../../../../hook/useAuth';
 const Header = () => {
     const { user, logOut} = useAuth();
     return (
-        <div id="header">
+        <div id="header">  
             <Navbar collapseOnSelect expand="lg" variant="black">
                 <Container>
                     <Navbar.Brand>
                         <h5 className="website-name"><span className="skill_text mx-3 my-3">LS</span></h5>
                     </Navbar.Brand>
 
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className="text-white" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className="text-black" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
 
                         <Nav defaultActiveKey="/home">
