@@ -15,8 +15,29 @@ const Home = () => {
             <Header></Header>
             <Banner></Banner>
             <HomeServices></HomeServices>
+            <hr style={{
+                color: '#000000',
+                backgroundColor: '#000000',
+                height: 2,
+                borderColor: '#000000'
+            }} />
+
+            <hr style={{
+                color: '#000000',
+                backgroundColor: '#000000',
+                height: 2,
+                borderColor: '#000000'
+            }} />
+
             <Instructors></Instructors>
             <GroupStudy></GroupStudy>
+            <hr style={{
+                color: '#000000',
+                backgroundColor: '#000000',
+                height: 2,
+                borderColor: '#000000'
+            }} />
+
             <Feedbacks></Feedbacks>
             <Footer></Footer>
         </div>
