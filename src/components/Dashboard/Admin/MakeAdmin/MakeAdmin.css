@@ -1,15 +1,12 @@
  .make_admin {
-     margin-left: -500px;
+     margin-right: 300px;
+     margin-top: 200px;
  }
 
- .admin_text {
-     color: rgb(74, 138, 138);
-     font-family: cursive;
-     margin-left: -500px;
- }
 
- .admin_button{
+ .admin_button {
      background-color: rgb(15, 115, 133) !important;
      color: white !important;
      border-radius: 5px;
+     width: 40%;
  }

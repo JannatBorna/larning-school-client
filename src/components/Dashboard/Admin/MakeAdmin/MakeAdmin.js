@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, TextField, Alert } from '@mui/material';
 import swal from 'sweetalert';
 import './MakeAdmin.css';
+import { Box } from '@mui/material';
 
 
 const MakeAdmin = () => {
@@ -37,31 +38,45 @@ const MakeAdmin = () => {
 
 
     return (
-        <div >
-            <h2 className="my-4 admin_text ">Make An Admin</h2>
+        <div>
 
+              <div className="my-5">
+                    {/* <form onSubmit={handleAdminSubmit} className='make_admin'>
+                        <TextField
+                            sx={{ width: '20%' }}
+                            label="Email"
+                            type="email"
+                            onBlur={handleOnBlur}
+                            variant="standard" /> 
+                            
+                            
+                            <Button className='admin_button' type="submit" variant="contained">Make Admin</Button>
+                    </form> */}
 
-            <div className="my-5">
-                <form onSubmit={handleAdminSubmit} className='make_admin'>
-                    <TextField
-                        sx={{ width: '20%' }}
-                        label="Email"
-                        type="email"
-                        onBlur={handleOnBlur}
-                        variant="standard" />
+            <form onSubmit={handleAdminSubmit} className='make_admin'>   
+                <Box
+                    sx={{
+                        width: 600,
+                        maxWidth: '100%',
+                        display: 'flex'
+                    }}
+                >
+                        <TextField onBlur={handleOnBlur} fullWidth label="Email" id="fullWidth" />
 
-                        <br />
-                    <br />
+                    <button className='admin_button mx-4' type="submit" variant="contained">Make Admin</button>
+                </Box>
+            </form>
 
-                    <Button className='admin_button' type="submit" variant="contained">Make Admin</Button>
-
-                </form>
+             
+                <br />
+                <br />
+                <br />
 
                 {
-                    adminSuccess && <Alert severity="success">Made Admin</Alert>
+                    adminSuccess && <Alert severity="success">Made Admin Successfully!</Alert>
                 }
-
-            </div>
+  </div>  
+           
 
         </div>
 
