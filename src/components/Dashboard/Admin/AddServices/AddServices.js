@@ -48,7 +48,7 @@ const AddServices = () => {
     return (
         <div>
             <div className="add-review">
-                <h2>Add <span className="color-product">P</span>roduct</h2>
+                <h2 className='addServices_headline'>Add <span className="color-product">P</span>roduct</h2>
 
                 <form onSubmit={handleUser}>
                     <input type="text" placeholder="Product Name" ref={nameRef} />

@@ -31,28 +31,13 @@ const MakeAdmin = () => {
                 }
 
             })
-
-
         e.preventDefault()
     }
 
-
-    return (
-        <div>
-
-              <div className="my-5">
-                    {/* <form onSubmit={handleAdminSubmit} className='make_admin'>
-                        <TextField
-                            sx={{ width: '20%' }}
-                            label="Email"
-                            type="email"
-                            onBlur={handleOnBlur}
-                            variant="standard" /> 
-                            
-                            
-                            <Button className='admin_button' type="submit" variant="contained">Make Admin</Button>
-                    </form> */}
-
+       
+  return (
+    <div>
+        <div className="my-5">
             <form onSubmit={handleAdminSubmit} className='make_admin'>   
                 <Box
                     sx={{
@@ -67,7 +52,6 @@ const MakeAdmin = () => {
                 </Box>
             </form>
 
-             
                 <br />
                 <br />
                 <br />
@@ -75,13 +59,10 @@ const MakeAdmin = () => {
                 {
                     adminSuccess && <Alert severity="success">Made Admin Successfully!</Alert>
                 }
-  </div>  
-           
 
-        </div>
-
-
-    );
+            </div>  
+        </div>   
+);
 };
 
 export default MakeAdmin;
