@@ -64,8 +64,7 @@ const ManageAllOrder = () => {
                 }
 
             })
-
-    }
+        }
 
 
     return (

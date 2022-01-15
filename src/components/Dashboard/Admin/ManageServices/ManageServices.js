@@ -57,7 +57,7 @@ return (
                             key={manageService._id}>
 
                             <div className="manage-product">
-                                <img className="w-25" src={manageService.img} alt="" />
+                                <img className="w-50" src={manageService.img} alt="" />
                                 <h4 className="name-text my-2">{manageService.name}</h4>
                                 <small className="description-text">{manageService.describe}</small>
                                 <h6 className="price-text"><p>Price: {manageService.price}</p></h6>

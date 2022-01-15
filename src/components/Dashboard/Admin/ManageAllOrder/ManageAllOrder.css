@@ -1,13 +1,13 @@
 .manageALL-order {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 110%;
+    width: 150%;
 }
 
 
 
 .manage_all {
-    margin-left: -400px;
+    margin-left: -250px;
 }
 
 

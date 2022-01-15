@@ -1,6 +1,7 @@
 .manage-products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 150%;
 }
 
 .word-color {
@@ -15,7 +16,7 @@
     height: 330px;
     border-radius: 7px;
     width: 90%;
-    margin-left: -200px;
+    margin-left: -400px;
 }
 
 .manage-product:hover {
@@ -51,7 +52,7 @@
         width: 100%;
     }
 
-    
+
 }
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
