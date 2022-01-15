@@ -1,5 +1,13 @@
+.manageALL-order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 110%;
+}
+
+
+
 .manage_all {
-    margin-left: -300px;
+    margin-left: -400px;
 }
 
 
@@ -9,13 +17,13 @@
 
 
 @media only screen and (max-width:688px) {
-    .manage_text {
-        margin-bottom: 400px;
+    .manageALL-order {
+        grid-template-columns: repeat(2, 1fr);
     }
-
-
 }
 
 @media only screen and (min-width:689px) and (max-width: 991px) {
-   
+    .manageALL-order {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

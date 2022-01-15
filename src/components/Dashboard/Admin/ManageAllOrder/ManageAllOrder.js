@@ -73,13 +73,13 @@ const ManageAllOrder = () => {
             <h2 className="mb-5 mt-5 manage_text">Manage All Order</h2>
 
             <Container>
-                <div className="manage-products">
+                <div className="manageALL-order">
                     {
                         manageAllOrders.map(manageAllOrder => <div
                             key={manageAllOrder._id}>
 
                             <div className="manage-product">
-                                <img className="w-25" src={manageAllOrder.img} alt="" />
+                                <img className="w-50" src={manageAllOrder.img} alt="" />
                                 <h4 className="name-text my-2">{manageAllOrder.name}</h4>
                                 <small className="description-text">{manageAllOrder.describe}</small>
                                 <h6 className="price-text"><p>Price:$ {manageAllOrder.price}</p></h6>
