@@ -21,6 +21,15 @@ const Footer = () => {
                   <span className="footer_name">Learning School </span>
 
                   <br />
+
+                  <p className="mt-4 footer-menu">
+                    <small>
+                      An educational institution providing primary and secondary
+                      education, prior to tertiary education. Within a larger
+                      educational institution such as a department.
+                    </small>
+                  </p>
+
                   <div className="icons-container d-flex text-center mt-3">
                     <div className="icon icon_instagram">
                       <FontAwesomeIcon icon={faInstagramSquare} />
@@ -35,13 +44,6 @@ const Footer = () => {
                       <FontAwesomeIcon icon={faFacebookSquare} />
                     </div>
                   </div>
-                  <p className="mt-4 footer-menu">
-                    <small>
-                      An educational institution providing primary and secondary
-                      education, prior to tertiary education. Within a larger
-                      educational institution such as a department.
-                    </small>
-                  </p>
                 </div>
               </Col>
 
@@ -55,8 +57,11 @@ const Footer = () => {
 
                       <div>
                         <h5 className="footer_number">
-                            <span className="phone_icon">
-                              <FontAwesomeIcon icon={faPhoneVolume} /></span> +0 1 7 777 000 22</h5>
+                          <span className="phone_icon">
+                            <FontAwesomeIcon icon={faPhoneVolume} />
+                          </span>{" "}
+                          +0 1 7 777 000 22
+                        </h5>
                       </div>
                     </div>
                     <div className="map d-flex align-items-center justify-content-center footer_number">
@@ -68,13 +73,13 @@ const Footer = () => {
                         <p>
                           <span className="email_icon">
                             <FontAwesomeIcon icon={faEnvelope} />
-                          </span> learning@school.com
-                        
+                          </span>{" "}
+                          learning@school.com
                           <br />
                           <span className="google_icon">
                             <FontAwesomeIcon icon={faGoogle} />
-                          </span> www.learning_school.com
-                          
+                          </span>{" "}
+                          www.learning_school.com
                         </p>
                       </div>
                     </div>
