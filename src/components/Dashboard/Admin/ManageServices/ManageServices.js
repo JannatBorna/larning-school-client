@@ -1,9 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import swal from 'sweetalert';
-import './ManageServices.css'
+import './ManageServices.css';
 
 const ManageServices = () => {
     const [manageServices, setManageServices] = useState([]);
@@ -61,7 +59,7 @@ return (
                                 <h4 className="name-text my-2">{manageService.name}</h4>
                                 <small className="description-text">{manageService.describe}</small>
                                 <h6 className="price-text"><p>Price: {manageService.price}</p></h6>
-                                <button className="btn btn-secondary" onClick={() => handleDelete(manageService._id)}>Remove</button>
+                                <button className="manageService_button" onClick={() => handleDelete(manageService._id)}>Remove</button>
                             </div>
 
                         </div>)

@@ -9,8 +9,13 @@
   padding: 20px;
 }
 
+.hello_color {
+  color: rgb(52, 146, 138) !important;
+  font-weight: bolder;
+}
+
 .color_text {
-  color: coral !important;
+  color: rgb(192, 173, 65) !important;
 }
 
 .health_care {

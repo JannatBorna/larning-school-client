@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
-import useAuth from '../../../../../hook/useAuth';
 import swal from 'sweetalert';
-import './AddFeedback.css'
+import useAuth from '../../../../../hook/useAuth';
+import './AddFeedback.css';
 
 
 const AddFeedback = () => {
@@ -56,7 +56,7 @@ const AddFeedback = () => {
                     <br />
                     <input type="rating" placeholder="Product rating Number" ref={ratingRef} />
 
-                    <input className="btn btn-secondary" type="submit" value="Submit" />
+                    <input className="feedback_button" type="submit" value="Submit" />
                 </form>
             </div>
         </div>

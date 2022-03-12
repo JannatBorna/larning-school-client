@@ -1,9 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import swal from 'sweetalert';
-import './ManageAllOrder.css'
+import './ManageAllOrder.css';
 
 
 const ManageAllOrder = () => {
@@ -83,9 +81,9 @@ const ManageAllOrder = () => {
                                 <small className="description-text">{manageAllOrder.describe}</small>
                                 <h6 className="price-text"><p>Price:$ {manageAllOrder.price}</p></h6>
 
-                                <button className="btn btn-secondary mx-5" onClick={() => handleUpdate(manageAllOrder._id)}>Update</button>
+                                <button className="manageAll_button mx-5" onClick={() => handleUpdate(manageAllOrder._id)}>Update</button>
                                 
-                                <button className="btn btn-secondary" onClick={() => handleDelete(manageAllOrder._id)}>Delete</button>
+                                <button className="manageAll_button" onClick={() => handleDelete(manageAllOrder._id)}>Delete</button>
                             </div>
 
                         </div>)

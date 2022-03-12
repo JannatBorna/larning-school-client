@@ -17,7 +17,7 @@ const MyOrder = ({ myBooking, handleDelete }) => {
                 <small className="">Price: {price}</small>
 
                 <br />
-                <button className="btn btn-danger my-3" onClick={() => handleDelete(myBooking._id)}>Cancel</button>
+                <button className="order_button my-3" onClick={() => handleDelete(myBooking._id)}>Cancel</button>
 
                 {/* {
                     payment ? <button className="btn btn-danger my-3">Paid</button>

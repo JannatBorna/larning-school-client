@@ -1,9 +1,17 @@
 .add-review {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .color-product {
-    color: crimson !important;
-    font-size: 60px;
+  color: crimson !important;
+  font-size: 60px;
+}
 
+.addService_button {
+  background-color: rgb(218, 25, 67) !important;
+  border: 1px solid rgb(218, 25, 67);
+  color: white !important;
+  border-radius: 50px;
+  width: 30%;
+  height: 34px;
 }

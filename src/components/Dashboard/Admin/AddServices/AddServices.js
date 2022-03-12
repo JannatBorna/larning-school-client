@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import swal from 'sweetalert';
-import './AddServices.css'
+import './AddServices.css';
 
 
 const AddServices = () => {
@@ -56,7 +56,7 @@ const AddServices = () => {
                     <textarea {...register("description")} placeholder="description" ref={descriptionRef} />
                     <br />
                     <input type="number" {...register(" price")} placeholder="Product Price" ref={priceRef} />
-                    <input className="btn btn-secondary" type="submit" value="Add Now" />
+                    <input className="addService_button" type="submit" value="Add Now" />
                 </form>
             </div>
         </div>

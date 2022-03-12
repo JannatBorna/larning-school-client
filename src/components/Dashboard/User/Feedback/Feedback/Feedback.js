@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
 import Rating from 'react-rating';
-import './Feedback.css'
+import './Feedback.css';
 
 const Feedback = ({ feedback }) => {
     const { name, img, description, rating } = feedback;
@@ -13,7 +13,7 @@ const Feedback = ({ feedback }) => {
                 <small className="description_text">{description}</small>
                 <br />
                 <Rating
-                    className="text-danger"
+                    className="rating_color"
                     initialRating={rating}
                     emptySymbol="far fa-star icon-color"
                     fullSymbol="fas fa-star icon-color"
