@@ -1,87 +1,78 @@
 #banner {
-    background-color: #e0c475 !important;
-    font-family: cursive;
+  background-color: #f7f6f3 !important;
+  font-family: cursive;
 }
 
 .tag_p {
-    color: rgb(20, 20, 24) !important;
-    font-size: 20px;
-    font-weight: 600;
+  color: rgb(20, 20, 24) !important;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .program {
-    color: rgb(248, 24, 36) !important;
-    font-size: 25px;
+  color: rgb(248, 24, 36) !important;
+  font-size: 25px;
 }
 
 .tag_small {
-    color: black !important;
-    font-size: 13px;
+  color: black !important;
+  font-size: 13px;
 }
 
 .banner_text {
-    font-size: 13px;
-    color: rgb(163, 160, 160);
+  font-size: 13px;
+  color: rgb(163, 160, 160);
 }
 
-
-
 .home_button {
-    margin-right: 488px;
+  margin-right: 488px;
 }
 
 .button_color {
-    background-color: rgb(218, 25, 67) !important;
-    color: white !important;
-    width: 55%;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 5px;
-
-
+  background-color: rgb(218, 25, 67) !important;
+  color: white !important;
+  width: 55%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
 }
 
-
-@media only screen and (max-width:688px) {
-    /* #banner {
+@media only screen and (max-width: 688px) {
+  /* #banner {
         background-color: #e0c475 !important;
         font-family: cursive;
     } */
 
-    /* .banner_text {
+  /* .banner_text {
         font-size: 10px;
         color: rgb(163, 160, 160);
         margin-left: -100px;
     } */
 
-    .button_color {
-        width: 30%;
-        height: 40px;
-        font-size: 9px;
-    }
+  .button_color {
+    width: 30%;
+    height: 40px;
+    font-size: 9px;
+  }
 
-    .home_button {
-        margin-right: -50px;
-    }
-
+  .home_button {
+    margin-right: -50px;
+  }
 }
 
-@media only screen and (min-width:689px) and (max-width: 991px) {
-    /* #banner {
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  /* #banner {
         background-color: #e0c475 !important;
         font-family: cursive;
     } */
 
-    .button_color {
+  .button_color {
+    width: 150%;
+    height: 40px;
+    font-size: 15px;
+  }
 
-        width: 150%;
-        height: 40px;
-        font-size: 15px;
-    }
-
-    .home_button {
-        margin-right: 490px;
-    }
-
-
+  .home_button {
+    margin-right: 490px;
+  }
 }

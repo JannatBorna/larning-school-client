@@ -1,0 +1,46 @@
+#header {
+  background-color: #ffffff !important;
+  height: 45px;
+}
+
+.nav_login {
+  margin-bottom: 27px;
+  color: black !important;
+  font-weight: bolder;
+}
+
+#basic-nav-dropdown {
+  color: rgb(218, 25, 67) !important;
+  font-size: 13px;
+  margin-bottom: 27px;
+  font-weight: bolder;
+}
+
+.instagram {
+  color: rgb(214, 60, 60) !important;
+  margin-bottom: 27px;
+}
+
+.twitter {
+  color: rgb(15, 112, 240) !important;
+  margin-bottom: 27px;
+}
+
+.youtube {
+  color: rgb(252, 7, 7) !important;
+  margin-bottom: 27px;
+}
+
+.facebook {
+  color: rgb(15, 94, 240) !important;
+  margin-bottom: 27px;
+}
+
+.logout_button {
+  background-color: rgb(218, 25, 67) !important;
+  color: white !important;
+  border: 1px solid rgb(218, 25, 67);
+  border-radius: 50px;
+  width: 40%;
+  height: 40px;
+}

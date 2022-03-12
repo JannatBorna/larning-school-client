@@ -1,17 +1,14 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import swal from 'sweetalert';
-import './MyOrders.css';
 import MyOrder from '../MyOrder/MyOrder';
-import useAuth from '../../../../../hook/useAuth';
+import './MyOrders.css';
 
 const MyOrders = () => {
 
     const [myBookings, setMyBookings] = useState([]);
 
 
-    const { user } = useAuth()
+    // const { user } = useAuth()
 
 
     useEffect(() => {

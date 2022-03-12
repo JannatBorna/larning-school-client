@@ -1,21 +1,19 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import { Login, Logout, Person } from "@mui/icons-material";
+import MenuIcon from '@mui/icons-material/Menu';
+import { Button } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import {Outlet} from "react-router-dom";
-import { Button } from '@mui/material';
+import PropTypes from 'prop-types';
+import * as React from 'react';
+import { NavLink, Outlet } from "react-router-dom";
 import useAuth from '../../../../hook/useAuth';
-import DashboardHome from './../DashboardHome/DashboardHome';
-import { Person, Logout, Login } from "@mui/icons-material";
-import './Dashboard.css'
-import { NavLink } from 'react-router-dom';
+import './Dashboard.css';
 
 
 

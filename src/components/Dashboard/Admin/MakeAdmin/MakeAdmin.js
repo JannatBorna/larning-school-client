@@ -1,8 +1,7 @@
+import { Alert, Box, TextField } from '@mui/material';
 import React, { useState } from 'react';
-import { Button, TextField, Alert } from '@mui/material';
 import swal from 'sweetalert';
 import './MakeAdmin.css';
-import { Box } from '@mui/material';
 
 
 const MakeAdmin = () => {
