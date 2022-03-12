@@ -20,12 +20,14 @@
   color: rgb(0, 0, 0) !important;
   font-family: monospace;
   font-weight: bolder;
+  border-bottom: 2px solid rgb(228, 120, 120);
+  border-top: 2px solid rgb(228, 120, 120);
 }
 
 .nav_bar:hover {
   color: rgb(250, 107, 12) !important;
-  border-bottom: 2px solid rgb(228, 120, 120);
-  border-top: 2px solid rgb(228, 120, 120);
+  /* border-bottom: 2px solid rgb(228, 120, 120);
+  border-top: 2px solid rgb(228, 120, 120); */
   font-weight: 600;
 }
 

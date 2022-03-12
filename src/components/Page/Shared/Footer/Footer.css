@@ -1,126 +1,152 @@
 .icon {
-    margin: 5px;
-    padding: 5px;
-    /* background-color: rgb(46, 46, 46); */
-    color: rgb(228, 228, 228);
-    font-size: 13px;
+  margin: 5px;
+  padding: 5px;
+  /* background-color: rgb(46, 46, 46); */
+  color: rgb(228, 228, 228);
+  font-size: 13px;
 }
 
-
 .icon_instagram:hover {
-    color: rgb(211, 88, 88) !important;
-    font-size: 24px;
+  color: rgb(211, 88, 88) !important;
+  font-size: 24px;
 }
 
 .icon_twitter:hover {
-    color: rgb(106, 155, 189) !important;
-    font-size: 24px;
+  color: rgb(106, 155, 189) !important;
+  font-size: 24px;
 }
 
 .icon_youtube:hover {
-    color: rgb(216, 70, 70) !important;
-    font-size: 24px;
+  color: rgb(216, 70, 70) !important;
+  font-size: 24px;
 }
 
 .icon_facebook:hover {
-    color: rgb(79, 110, 211) !important;
-    font-size: 24px;
+  color: rgb(79, 110, 211) !important;
+  font-size: 24px;
 }
 
 .icon_instagram {
-    color: rgb(187, 24, 24) !important;
-    font-size: 24px;
+  color: rgb(187, 24, 24) !important;
+  font-size: 24px;
 }
 
 .icon_twitter {
-    color: rgb(37, 126, 185) !important;
-    font-size: 24px;
+  color: rgb(37, 126, 185) !important;
+  font-size: 24px;
 }
 
 .icon_youtube {
-    color: rgb(233, 12, 12) !important;
-    font-size: 24px;
+  color: rgb(233, 12, 12) !important;
+  font-size: 24px;
 }
 
 .icon_facebook {
-    color: rgb(26, 71, 218) !important;
-    font-size: 24px;
+  color: rgb(26, 71, 218) !important;
+  font-size: 24px;
 }
 
-
 .footer-menu {
-    list-style: none;
-    margin-top: 20px;
-    font-size: 16px;
-    cursor: pointer;
+  list-style: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: cursive;
 }
 
 .footer-menu:hover {
-    color: rgb(221, 55, 55) !important;
+  color: rgb(221, 55, 55) !important;
 }
 
 .footer-input {
-    padding: 8px;
-    border: none;
-    outline: none;
-    /* background-color: rgb(226, 226, 226) !important; */
-    border: 1px solid gray;
+  padding: 8px;
+  border: none;
+  outline: none;
+  /* background-color: rgb(226, 226, 226) !important; */
+  border: 1px solid gray;
 }
 
 .footer-container {
-    background-color: #e4e7a9;
-    padding: 10px;
-    color: rgb(70, 70, 70) !important;
-
+  background-color: #e4e7a9;
+  padding: 10px;
+  color: rgb(70, 70, 70) !important;
 }
 
 .footer-phone-icon {
-    font-size: 20px;
-    color: rgb(14, 5, 5) !important;
+  font-size: 20px;
+  color: rgb(14, 5, 5) !important;
 }
 
 .footer_name {
-    color: rgb(10, 36, 65);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
-    font-weight: 600;
+  color: rgb(10, 36, 65);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .footer_name:hover {
-    color: rgb(196, 44, 44);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
-    font-weight: 600;
-
-
+  color: rgb(196, 44, 44);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: 600;
 }
 
-
 .footer_button {
-    font-size: 10px;
-    margin-left: -370px;
-    background-color: rgb(10, 36, 65) !important;
+  font-size: 10px;
+  margin-left: -370px;
+  background-color: rgb(10, 36, 65) !important;
 }
 
 .footer_number {
-    font-size: 12px;
+  font-size: 18px;
+  font-family: cursive;
 }
 
-
-@media only screen and (max-width:688px) {
-    .footer-responsive {
-        width: 100%;
-    }
-
-    .footer_button {
-        font-size: 10px;
-        margin-left: -20px;
-        background-color: rgb(10, 36, 65) !important;
-    }
+#email_input {
+  width: 70%;
+  height: 50px;
+  margin-left: 120px;
 }
 
-@media only screen and (min-width:689px) and (max-width: 991px) {
-    .footer-responsive {
-        width: 100%;
-    }
+#subscribe_button {
+  background-color: rgb(218, 25, 67) !important;
+  border: 1px solid rgb(218, 25, 67) !important;
+  color: White !important;
+  border-radius: 50px;
+  margin-left: -40px;
+}
+
+.phone_icon {
+  color: rgb(20, 17, 24) !important;
+}
+
+.email_icon {
+  color: rgb(240, 33, 33) !important;
+}
+
+.google_icon {
+  color: rgb(23, 235, 87) !important;
+}
+
+.copy_text {
+  font-size: 12px;
+  font-family: cursive;
+}
+
+@media only screen and (max-width: 688px) {
+  .footer-responsive {
+    width: 100%;
+  }
+
+  .footer_button {
+    font-size: 10px;
+    margin-left: -20px;
+    background-color: rgb(10, 36, 65) !important;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .footer-responsive {
+    width: 100%;
+  }
 }

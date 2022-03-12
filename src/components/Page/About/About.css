@@ -14,6 +14,10 @@
   font-weight: bolder;
 }
 
+.hello_two {
+  color: rgb(218, 25, 67) !important;
+}
+
 .color_text {
   color: rgb(192, 173, 65) !important;
 }

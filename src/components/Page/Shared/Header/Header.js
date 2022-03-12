@@ -13,9 +13,9 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
 
                         <Nav defaultActiveKey="/home">
-                            <Nav.Link className="nav_bar active" as={HashLink} to="/home#home">Home</Nav.Link>
-                            <Nav.Link className="nav_bar" as={HashLink} to="/ourServices#ourServices">Our services</Nav.Link>
-                            <Nav.Link className="nav_bar" as={HashLink} to="/dashboard#dashboard">Dashboard</Nav.Link>
+                            <Nav.Link className="nav_bar active mx-5" as={HashLink} to="/home#home">Home</Nav.Link>
+                            <Nav.Link className="nav_bar mx-3" as={HashLink} to="/ourServices#ourServices">Our services</Nav.Link>
+                            <Nav.Link className="nav_bar mx-5" as={HashLink} to="/dashboard#dashboard">Dashboard</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
