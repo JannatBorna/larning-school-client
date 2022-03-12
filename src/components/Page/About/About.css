@@ -1,48 +1,46 @@
 .container_banner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(246, 255, 252) !important;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(246, 255, 252) !important;
 }
 
 .container_header {
-    margin: 20px;
-    padding: 20px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .color_text {
-    color: coral !important;
-
+  color: coral !important;
 }
 
 .health_care {
-    color: rgb(87, 87, 87) !important;
-    font-size: 27px;
+  color: rgb(87, 87, 87) !important;
+  font-size: 27px;
 }
 
 .p_tag {
-    font-size: 13px;
-    color: rgb(126, 122, 122) !important;
+  font-size: 13px;
+  color: rgb(126, 122, 122) !important;
 }
 
 .about_button {
-    background-color: rgb(18, 177, 156) !important;
-    color: rgb(17, 16, 16) !important;
-    text-decoration: none;
-    border-radius: 5px;
-    width: 20%;
-    height: 13%;
+  background-color: rgb(218, 25, 67) !important;
+  border: 1px solid rgb(218, 25, 67);
+  border-radius: 50px;
+  color: white !important;
+  text-decoration: none;
+  width: 20%;
+  height: 13%;
 }
 
-
-
-@media only screen and (max-width:688px) {
-    .container_banner {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media only screen and (max-width: 688px) {
+  .container_banner {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-@media only screen and (min-width:689px) and (max-width: 991px) {
-    .container_banner {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .container_banner {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

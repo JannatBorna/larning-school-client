@@ -1,24 +1,25 @@
 .view_project {
-    margin-left: -180px;
+  margin-left: -180px;
 }
 
 .more_services {
-    width: 40%;
-    height: 40px;
-    background-color: rgb(29, 99, 131) !important;
-    color: white !important;
-    border-radius: 5px;
-    font-size: 22px;
+  width: 40%;
+  height: 40px;
+  background-color: rgb(247, 212, 17) !important;
+  border: 1px solid rgb(218, 25, 67);
+  color: white !important;
+  border-radius: 5px;
+  font-size: 22px;
 }
 
-@media only screen and (max-width:688px) {
-    .view_project {
-        margin-left: -80px;
-    }
+@media only screen and (max-width: 688px) {
+  .view_project {
+    margin-left: -80px;
+  }
 }
 
-@media only screen and (min-width:689px) and (max-width: 991px) {
-    .view_project {
-        margin-left: -130px;
-    }
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .view_project {
+    margin-left: -130px;
+  }
 }

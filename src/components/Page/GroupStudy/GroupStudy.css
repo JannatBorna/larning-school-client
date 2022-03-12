@@ -1,68 +1,67 @@
 .group_study {
-    margin: 50px;
-    padding: 10px;
-    border: 1px solid rgb(214, 198, 198);
-    height: 490px;
-    border-radius: 7px;
+  margin: 50px;
+  padding: 10px;
+  border: 1px solid rgb(214, 198, 198);
+  height: 490px;
+  border-radius: 7px;
 }
 
 .study {
-    border: 1px solid rgb(216, 215, 206);
-    height: 330px;
-    border-radius: 7px;
+  border: 1px solid rgb(216, 215, 206);
+  height: 330px;
+  border-radius: 7px;
 }
 
 .study:hover {
-    z-index: 1;
-    box-shadow: 0 8px 50px rgba(168, 163, 163, 0.2);
-    transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0 8px 50px rgba(168, 163, 163, 0.2);
+  transform: scale(1.05);
 }
 
 .join_group {
-    background-color: rgb(231, 25, 104) !important;
-    color: white !important;
-    border-radius: 5px;
+  background-color: rgb(231, 25, 104) !important;
+  border: 1px solid rgb(218, 25, 67);
+  color: white !important;
+  border-radius: 5px;
 }
 
 .group_text {
-    color: rgb(231, 25, 104) !important;
-    font-family: cursive;
+  color: rgb(231, 25, 104) !important;
+  font-family: cursive;
 }
 
+@media only screen and (max-width: 688px) {
+  .group_study {
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid rgb(214, 198, 198);
+    height: 980px;
+    border-radius: 7px;
+  }
 
-@media only screen and (max-width:688px) {
-    .group_study {
-        margin: 50px;
-        padding: 10px;
-        border: 1px solid rgb(214, 198, 198);
-        height: 980px;
-        border-radius: 7px;
-    }
-
-    .study {
-        border: 1px solid rgb(216, 215, 206);
-        height: 250px;
-        border-radius: 7px;
-    }
+  .study {
+    border: 1px solid rgb(216, 215, 206);
+    height: 250px;
+    border-radius: 7px;
+  }
 }
 
-@media only screen and (min-width:689px) and (max-width: 991px) {
-    /* .services_container {
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  /* .services_container {
         grid-template-columns: repeat(3, 1fr);
     } */
 
+  .group_study {
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid rgb(214, 198, 198);
+    height: 420px;
+    border-radius: 7px;
+  }
 
-    .group_study {
-        margin: 50px;
-        padding: 10px;
-        border: 1px solid rgb(214, 198, 198);
-        height: 420px;
-        border-radius: 7px;
-    }
-
-    .study {
-        border: 1px solid rgb(216, 215, 206);
-        height: 250px;
-        border-radius: 7px;
-    }
+  .study {
+    border: 1px solid rgb(216, 215, 206);
+    height: 250px;
+    border-radius: 7px;
+  }
 }

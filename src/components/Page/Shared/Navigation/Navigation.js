@@ -16,7 +16,7 @@ import "./Navigation.css";
 const Navigation = () => {
   const { user, logOut } = useAuth();
   return (
-    <div id="header">
+    <div id="navigation">
       <Navbar collapseOnSelect expand="lg" variant="black">
         <Container>
           <Navbar.Collapse id="responsive-navbar-nav">

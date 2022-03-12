@@ -26,8 +26,8 @@ const HomeServices = () => {
                    </HomeService>)
                 }
                 
-                <div className="view_project">
-                    <a href="/ourServices"><button className="mt-3 more_services">More Services</button></a>
+                <div className="view_project ">
+                    <a href="/ourServices"><button className="mt-3 more_services justify-content-center">More Services</button></a>
                 </div>
             </div>
           

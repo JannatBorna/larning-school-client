@@ -2,14 +2,11 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import about from '../../../image/about/about.png';
-import Footer from '../Shared/Footer/Footer';
-import Header from '../Shared/Header/Header';
 import './About.css';
 
 const About = () => {
     return (
         <div>
-            <Header></Header>
             <Container className="mt-2">
 
                 <div className="container_banner my-3">
@@ -26,8 +23,6 @@ const About = () => {
                 </div>
 
             </Container>
-
-            <Footer></Footer>
         </div>
         
     );
