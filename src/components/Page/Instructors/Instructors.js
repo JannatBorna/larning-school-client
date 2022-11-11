@@ -28,7 +28,7 @@ const Instructors = () => {
                                                     <p><img className="img-fluid w-100" src={photo1} alt="" /></p>
                                                     <h4 className="card-title">Emma Hart Willard</h4>
                                                    
-                                                    <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
+                                                    {/* <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -66,7 +66,7 @@ const Instructors = () => {
                                                     <p><img className=" img-fluid w-100" src={photo2} alt="" /></p>
                                                     <h4 className="card-title">Anton Shas</h4>
 
-                                                    <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
+                                                    {/* <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -101,7 +101,7 @@ const Instructors = () => {
                                                     <p><img className=" img-fluid w-100" src={photo3} alt="" /></p>
                                                     <h4 className="card-title">Jin Anne</h4>
 
-                                                    <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
+                                                    {/* <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +138,7 @@ const Instructors = () => {
                                                     <p><img className=" img-fluid w-100" src={photo4} alt="" /></p>
                                                     <h4 className="card-title">Yaron Schoen</h4>
 
-                                                    <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
+                                                    {/* <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -176,7 +176,7 @@ const Instructors = () => {
                                                     <p><img className=" img-fluid w-100" src={photo5} alt="" /></p>
                                                     <h4 className="card-title">Mike Kus</h4>
 
-                                                    <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
+                                                    {/* <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -213,7 +213,7 @@ const Instructors = () => {
                                                     <p><img className=" img-fluid w-100" src={photo6} alt="" /></p>
                                                     <h4 className="card-title">Jeffrey Ze</h4>
 
-                                                    <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a>
+                                                    {/* <a href="#" className="btn_button btn-sm"><i className="fa fa-plus"></i></a> */}
                                                 </div>
                                             </div>
                                         </div>
