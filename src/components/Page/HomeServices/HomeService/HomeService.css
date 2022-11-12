@@ -6,17 +6,17 @@
 
 .provide_text {
     font-size: 55px;
-    color: rgb(245, 39, 32) !important;
+    color: #f52720 !important;
     font-weight: 600;
 }
 
 .services_text {
-    color: rgb(21, 59, 68) !important;
+    color: #153b44 !important;
     font-size: 40px;
 }
 
 .provide {
-    color: rgb(36, 170, 108);
+    color: #24aa6c;
 }
 
 .view_project{
@@ -25,7 +25,7 @@
 
 
 .more_services {
-    background-color: rgb(26, 26, 43) !important;
+    background-color: #1a1a2b !important;
    
 
 

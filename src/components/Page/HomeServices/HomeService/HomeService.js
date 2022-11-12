@@ -25,7 +25,7 @@ const HomeService = ({ homeService}) => {
                 onMouseLeave={() => set({ xys: [0, 0, 1] })}
                 style={{ transform: props.xys.interpolate(trans) }}
             >
-                <div style={{ height: '20ch', flexDirection: 'row' }} className="align-items-start">
+                <div style={{ height: '50vh', flexDirection: 'row' }} className="align-items-start">
                     <div className="p-3 service">
 
                         <Image src={img} className="w-50 mb-3" roundedCircle />

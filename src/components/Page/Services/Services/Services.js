@@ -22,7 +22,7 @@ const Services = () => {
        <div>
            <Header></Header>
             <Container className='custom-container mt-5 pt-5'>
-                <h2 className='mb-5 services_text'>What We Provider!
+                <h2 className='mb-5 services-text'>What We Provider!
                 </h2>
                 <div className="services_container">
 

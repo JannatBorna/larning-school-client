@@ -14,7 +14,7 @@ const HomeServices = () => {
     }, [])
     return (
         <Container className='custom-container mt-5 pt-5'>
-            <h2 className='mb-5 services_text'>What We <span className='provide'>Pr</span><span className='provide_text'>O</span><span className='provide'>vide!</span></h2>
+            <h2 className='mb-5 services-text'>What We <span className='provide'>Pr</span><span className='provide_text'>O</span><span className='provide'>vide!</span></h2>
             <div className="services_container">
 
                 {
@@ -26,11 +26,11 @@ const HomeServices = () => {
                    </HomeService>)
                 }
                 
+            </div>    
+            
                 <div className="view_project ">
-                    <a href="/ourServices"><button className="mt-3 more_services justify-content-center">More Services</button></a>
+                    <a href="/ourServices"><button className="mt-3 more-services">More Services</button></a>
                 </div>
-            </div>
-          
         </Container>
                    
     );
