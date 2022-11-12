@@ -4,7 +4,7 @@
 }
 
 .header_section {
-  background-color: rgb(11, 58, 56);
+  background-color: #0b3a38 !important;
 }
 
 .image_tag {
@@ -12,33 +12,31 @@
 }
 
 #responsive-navbar-nav {
-  color: rgb(255, 255, 255) !important;
+  color: #ffffff !important;
 }
 
 .nav_bar {
   font-size: 17px;
-  color: rgb(0, 0, 0) !important;
+  color: #000000 !important;
   font-family: monospace;
   font-weight: bolder;
-  border-bottom: 2px solid rgb(228, 120, 120);
-  border-top: 2px solid rgb(228, 120, 120);
+  border-bottom: 2px solid #e47878;
+  border-top: 2px solid #e47878;
 }
 
 .nav_bar:hover {
-  color: rgb(250, 107, 12) !important;
-  /* border-bottom: 2px solid rgb(228, 120, 120);
-  border-top: 2px solid rgb(228, 120, 120); */
+  color: #fa6b0c !important;
   font-weight: 600;
 }
 
 @media only screen and (max-width: 688px) {
   #responsive-navbar-nav {
-    color: rgb(211, 25, 25) !important;
+    color: #d31919 !important;
   }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 991px) {
   #responsive-navbar-nav {
-    color: rgb(238, 21, 21) !important;
+    color: #ee1515 !important;
   }
 }
