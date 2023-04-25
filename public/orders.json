@@ -1,0 +1,21 @@
+[
+    {
+        "phoneNumber": "",
+        "address": "",
+        "products": "Web Development",
+        "name": "Web Development",
+        "img":"https://i.ibb.co/vY8K4kM/web.png",
+        "price":"20",
+        "describe":"Full-stack developers who can develop for the cloud and work with Redi…"
+    },
+
+    {
+        "phoneNumber": "",
+        "address": "",
+        "products": "Artificial Intelligence",
+        "name": "Artificial Intelligence",
+        "img":"https://i.ibb.co/5cjznpr/ai.png",
+        "price":"19",
+        "describe":"Learning intermediate computer familiar TensorFlow framework understan…"
+    }
+]

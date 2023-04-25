@@ -1,0 +1,34 @@
+[
+    {
+        "email":"jannat@gmail.com",
+        "displayName":"Jannat",
+        "role":"admin"
+    },
+
+    {
+        "email":"baset@gmail.com",
+        "displayName":"baset"       
+    },
+
+    {
+        "email":"admin@admin.com",
+        "displayName":"Admin",
+        "role":"admin"       
+    },
+
+    {
+        "email":"ma@baba.com",
+        "displayName":"baba-ma"
+    },
+
+    {
+        "email":"user@user.com",
+        "displayName":"user"
+    },
+
+    {
+        "email":"borna@jannat.com",
+        "displayName":"Borna",
+        "role":"admin"
+    }
+]
