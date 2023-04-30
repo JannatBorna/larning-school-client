@@ -17,30 +17,40 @@ const Navigation = () => {
   const { user, logOut } = useAuth();
   return (
     <div id="navigation">
-      <Navbar collapseOnSelect expand="lg" variant="black">
-        <Container>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="justify-content-start">
+      <Navbar bg="light" expand="lg" sticky="top">
+        <Container fluid>
+             <Navbar.Brand href="#">
+       <Nav className="justify-content-start">
+       <Nav.Link className="instagram" href="https://www.instagram.com/borna_jannat">
+         <FontAwesomeIcon icon={faInstagramSquare} /> 
+       </Nav.Link>  
+      
+       <Nav.Link className="twitter" href="https://twitter.com/jannat_borna">
+         <FontAwesomeIcon icon={faTwitterSquare} />
+       </Nav.Link>  
+     
+       <Nav.Link className="youtube" href="https://www.youtube.com">
+         <FontAwesomeIcon icon={faYoutube} />
+       </Nav.Link> 
+      
+       <Nav.Link className="facebook" href="https://www.facebook.com/Bornabaset">
+         <FontAwesomeIcon icon={faFacebookSquare} />
+       </Nav.Link>
+     </Nav> 
+   </Navbar.Brand>
 
-              <Nav.Link className="instagram" href="https://www.instagram.com/borna_jannat">
-                <FontAwesomeIcon icon={faInstagramSquare} /> 
-              </Nav.Link>  
-               
-              <Nav.Link className="twitter" href="https://twitter.com/jannat_borna">
-                <FontAwesomeIcon icon={faTwitterSquare} />
-              </Nav.Link>  
-              
-              <Nav.Link className="youtube" href="https://www.youtube.com">
-                <FontAwesomeIcon icon={faYoutube} />
-              </Nav.Link> 
-               
-              <Nav.Link className="facebook" href="https://www.facebook.com/Bornabaset">
-                <FontAwesomeIcon icon={faFacebookSquare} />
-              </Nav.Link>
-                
-            </Nav>  
-              
-                
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Nav.Link className="nav_bar active mx-5" as={HashLink} to="/home#home">Home</Nav.Link>
+            <Nav.Link className="nav_bar mx-3" as={HashLink} to="/ourServices#ourServices">Our services</Nav.Link>
+            <Nav.Link className="nav_bar mx-5" as={HashLink} to="/dashboard#dashboard">Dashboard</Nav.Link>
+          </Nav>
+                        
            {user?.email ? (   
               
             <Navbar.Collapse className="justify-content-end ">

@@ -3,8 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import Apply from '../Apply/Apply';
 import Footer from '../Shared/Footer/Footer';
-import Header from '../Shared/Header/Header';
 import './SingleService.css';
+import Navigation from '../Shared/Navigation/Navigation';
 
 const SingleService = () => {
     const [ singleService, setSingleService ] = useState({})
@@ -20,7 +20,7 @@ const SingleService = () => {
 
     return (
         <div className="my-5">
-            <Header></Header>
+            <Navigation />
             <h2 className="my-5">Your Apply Services</h2>
 
             <Container>

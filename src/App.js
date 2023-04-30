@@ -47,14 +47,7 @@ function App() {
             
             <Route path="/groupStudy" element={<GroupStudy />}>
             </Route>
-      
-
-         
-              
-            
-             
-            
-             
+    
           
          <Route path="/dashboard" element={<PrivateRoute> <Dashboard /> </PrivateRoute>}>  
 

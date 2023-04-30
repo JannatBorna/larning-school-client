@@ -3,9 +3,9 @@ import { Alert, AlertTitle, Button, CircularProgress, Container, TextField } fro
 import { NavLink, useLocation,  } from 'react-router-dom';
 import useAuth from '../../../hook/useAuth';
 import { useNavigate } from 'react-router-dom';
-import './Register.css'
 import Footer from '../../Page/Shared/Footer/Footer';
-import Header from '../../Page/Shared/Header/Header';
+import Navigation from '../../Page/Shared/Navigation/Navigation';
+import './Register.css';
 
 const Register = () => {
           
@@ -49,7 +49,7 @@ const Register = () => {
 
     return (
        <div>
-           <Header></Header>
+            <Navigation />
             <Container><h2 className="register mt-3 mb-4">Register With</h2>
                 {
                     !isLoading &&

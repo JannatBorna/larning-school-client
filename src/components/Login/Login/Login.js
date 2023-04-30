@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Alert, AlertTitle, Button, CircularProgress, Container, TextField, } from '@mui/material';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from './../../../hook/useAuth';
-import './Login.css'
 import Footer from '../../Page/Shared/Footer/Footer';
-import Header from '../../Page/Shared/Header/Header';
+import Navigation from '../../Page/Shared/Navigation/Navigation';
+import './Login.css';
 
 const Login = () => {
 
@@ -43,7 +43,7 @@ const Login = () => {
 
     return (
         <div>
-            <Header></Header>
+            <Navigation />
             <Container >
                 <form onSubmit={handleLoginSubmit} className="login_container mt-5">
                     <h2 className="login mt-3 mb-4">Login With</h2>

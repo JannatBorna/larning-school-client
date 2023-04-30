@@ -9,12 +9,6 @@
   font-weight: bolder;
 }
 
-#basic-nav-dropdown {
-  color: rgb(218, 25, 67) !important;
-  font-size: 13px;
-  margin-bottom: 27px;
-  font-weight: bolder;
-}
 
 .instagram {
   color: rgb(214, 60, 60) !important;
@@ -43,4 +37,47 @@
   border-radius: 50px;
   width: 40%;
   height: 40px;
+}
+
+#header {
+  background-color: #ffffff !important;
+  margin-top: 25px;
+}
+
+.header_section {
+  background-color: #0b3a38 !important;
+}
+
+.image_tag {
+  width: 10%;
+}
+
+#responsive-navbar-nav {
+  color: #ffffff !important;
+}
+
+.nav_bar {
+  font-size: 17px;
+  color: #000000 !important;
+  font-family: monospace;
+  font-weight: bolder;
+  border-bottom: 2px solid #e47878;
+  border-top: 2px solid #e47878;
+}
+
+.nav_bar:hover {
+  color: #fa6b0c !important;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 688px) {
+  #responsive-navbar-nav {
+    color: #d31919 !important;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  #responsive-navbar-nav {
+    color: #ee1515 !important;
+  }
 }

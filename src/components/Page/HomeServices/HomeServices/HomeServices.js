@@ -8,7 +8,7 @@ const HomeServices = () => {
     const [limit, setLimit] = useState(6);
 
     useEffect(() => {
-        fetch('https://warm-oasis-87609.herokuapp.com/services')
+        fetch('/service.json')
             .then(res => res.json())
             .then(data => setHomeServices(data))
     }, [])
@@ -27,10 +27,6 @@ const HomeServices = () => {
                 }
                 
             </div>    
-            
-                <div className="view_project ">
-                    <a href="/ourServices"><button className="mt-3 more-services">More Services</button></a>
-                </div>
         </Container>
                    
     );

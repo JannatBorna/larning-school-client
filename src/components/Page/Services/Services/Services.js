@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Footer from '../../Shared/Footer/Footer';
-import Header from '../../Shared/Header/Header';
+import Navigation from '../../Shared/Navigation/Navigation';
 import Service from '../Service/Service';
 import './Services.css';
 
@@ -13,14 +13,14 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://warm-oasis-87609.herokuapp.com/services')
+        fetch('/service.json')
            .then(res => res.json())
            .then(data => setServices(data))
     }, [])
 
     return ( 
        <div>
-           <Header></Header>
+           <Navigation />
             <Container className='custom-container mt-5 pt-5'>
                 <h2 className='mb-5 services-text'>What We Provider!
                 </h2>
