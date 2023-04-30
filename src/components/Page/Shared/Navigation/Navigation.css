@@ -1,9 +1,21 @@
-#navigation {
-  background-color: #ffffff !important;
-  height: 45px;
+.mid-nav{
+  margin-left: 300px;
+}
+.nav-bar {
+  font-size: 17px;
+  color: #000000 !important;
+  font-family: monospace;
+  font-weight: bolder;
+  border-bottom: 2px solid #e47878;
+  border-top: 2px solid #e47878;
 }
 
-.nav_login {
+.nav-bar:hover {
+  color: #fa6b0c !important;
+  font-weight: 600;
+}
+
+.nav-login {
   margin-bottom: 27px;
   color: black !important;
   font-weight: bolder;
@@ -56,19 +68,6 @@
   color: #ffffff !important;
 }
 
-.nav_bar {
-  font-size: 17px;
-  color: #000000 !important;
-  font-family: monospace;
-  font-weight: bolder;
-  border-bottom: 2px solid #e47878;
-  border-top: 2px solid #e47878;
-}
-
-.nav_bar:hover {
-  color: #fa6b0c !important;
-  font-weight: 600;
-}
 
 @media only screen and (max-width: 688px) {
   #responsive-navbar-nav {
