@@ -8,7 +8,7 @@ const HomeServices = () => {
     const [limit, setLimit] = useState(6);
 
     useEffect(() => {
-        fetch('/service.json')
+        fetch('https://larningschool-server.onrender.com/services')
             .then(res => res.json())
             .then(data => setHomeServices(data))
     }, [])

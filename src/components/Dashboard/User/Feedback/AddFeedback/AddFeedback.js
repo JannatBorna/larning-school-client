@@ -24,7 +24,7 @@ const AddFeedback = () => {
 
         const newUser = { name, img, rating, description };
 
-        fetch('https://warm-oasis-87609.herokuapp.com/feedbacks', {
+        fetch('https://larningschool-server.onrender.com/feedbacks', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

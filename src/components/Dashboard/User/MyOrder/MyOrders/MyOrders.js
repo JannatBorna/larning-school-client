@@ -12,7 +12,7 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        fetch('https://warm-oasis-87609.herokuapp.com/orders')
+        fetch('https://larningschool-server.onrender.com/orders')
             .then(res => res.json())
             .then(data => setMyBookings(data))
     }, [])
@@ -21,7 +21,7 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        fetch('https://warm-oasis-87609.herokuapp.com/services')
+        fetch('https://larningschool-server.onrender.com/services')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -30,7 +30,7 @@ const MyOrders = () => {
 
 
     const handleDelete = id => {
-        const url = `https://warm-oasis-87609.herokuapp.com/orders/${id}`
+        const url = `https://larningschool-server.onrender.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })

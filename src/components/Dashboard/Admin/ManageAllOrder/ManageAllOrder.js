@@ -9,13 +9,13 @@ const ManageAllOrder = () => {
     const [manageAllOrders, setManageAllOrders] = useState([]);
 
     useEffect(() => {
-        fetch('https://warm-oasis-87609.herokuapp.com/orders')
+        fetch('https://larningschool-server.onrender.com/orders')
             .then(res => res.json())
             .then(data => setManageAllOrders(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `https://warm-oasis-87609.herokuapp.com/orders/${id}`
+        const url = `https://larningschool-server.onrender.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })
@@ -48,7 +48,7 @@ const ManageAllOrder = () => {
 
     const handleUpdate = id => {
         swal("Good job!", "Update Successfully!", "success");
-        const url = `https://warm-oasis-87609.herokuapp.com/orders/${id}`
+        const url = `https://larningschool-server.onrender.com/orders/${id}`
         fetch(url, {
             method: 'PUT'
         })

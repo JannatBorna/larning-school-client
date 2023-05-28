@@ -7,7 +7,7 @@ const Feedbacks = () => {
      const [feedbacks, setFeedback] = useState([])
 
      useEffect(() => {
-         fetch('https://warm-oasis-87609.herokuapp.com/feedbacks')
+         fetch('https://larningschool-server.onrender.com/feedbacks')
           .then(res => res.json())
           .then(data => setFeedback(data))
      }, [])

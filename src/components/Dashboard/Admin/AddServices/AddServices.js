@@ -24,7 +24,7 @@ const AddServices = () => {
 
         const newUser = { name, img, description, price };
 
-        fetch('https://warm-oasis-87609.herokuapp.com/services', {
+        fetch('https://larningschool-server.onrender.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

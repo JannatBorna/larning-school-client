@@ -12,7 +12,7 @@ const SingleService = () => {
     const { servicesId } = useParams()
 
     useEffect(() => {
-        fetch(`https://warm-oasis-87609.herokuapp.com/services/${servicesId}`)
+        fetch(`https://larningschool-server.onrender.com/services/${servicesId}`)
         .then(res => res.json())
             .then(data => setSingleService(data))
     }, [servicesId])

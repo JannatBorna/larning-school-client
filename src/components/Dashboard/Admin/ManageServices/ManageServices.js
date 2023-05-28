@@ -7,14 +7,14 @@ const ManageServices = () => {
     const [manageServices, setManageServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://warm-oasis-87609.herokuapp.com/services')
+        fetch('https://larningschool-server.onrender.com/services')
             .then(res => res.json())
             .then(data => setManageServices(data))
     }, [])
 
 
     const handleDelete = id => {
-        const url = `https://warm-oasis-87609.herokuapp.com/services/${id}`
+        const url = `https://larningschool-server.onrender.com/services/${id}`
         fetch(url, {
             method: 'DELETE'
         })

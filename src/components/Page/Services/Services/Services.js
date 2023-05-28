@@ -13,7 +13,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('/service.json')
+        fetch('https://larningschool-server.onrender.com/services')
            .then(res => res.json())
            .then(data => setServices(data))
     }, [])
